@@ -1,3 +1,8 @@
+<?php
+/**
+* Template Name: shop
+*/
+?>
 <!DOCTYPE html>
 <html>
     <?php get_header(); ?>

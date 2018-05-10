@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+/* footer */
+.footer-wrapper{
+    height: 300px;
+    width: 100%;
+    background-image: url("../../images/dark-wood.png");
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+    .contact{
+        width: 29%
+    }
+    .operations{
+        width: 29%
+    }
+    .logo-footer{
+        background-image: url("../../images/logos/inhabitent-logo-text.svg");
+        background-repeat:no-repeat;
+        width: 29%;
+    }
+}
+
+.site-info{
+    a{
+        position: absolute;
+        text-align: center;
+        align-items: bottom;
+    }
+}

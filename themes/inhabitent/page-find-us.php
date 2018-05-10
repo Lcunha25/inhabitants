@@ -1,3 +1,8 @@
+<?php
+/**
+* Template Name: find-us
+*/
+?>
 <!DOCTYPE html>
 <html>
     <?php get_header(); ?>
@@ -10,7 +15,6 @@
 </head>
 <body>
     <?php get_sidebar(); ?>
-    <?php include 'find-us.php';?>
     <?php get_footer(); ?>
 </body>
 </html>

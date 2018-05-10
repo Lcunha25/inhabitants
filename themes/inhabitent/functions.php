@@ -79,11 +79,6 @@ function red_starter_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 }
 add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
 
-
-
-
-
-
 /**
  * Custom template tags for this theme.
  */

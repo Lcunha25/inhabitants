@@ -1,3 +1,8 @@
+<?php
+/**
+* Template Name: About
+*/
+?>
 <!DOCTYPE html>
 <html>
     <?php get_header(); ?>
@@ -9,10 +14,7 @@
     <script src="main.js"></script>
 </head>
 <body>
-<i class="fab fa-bitcoin"></i>
-    <h1> ABOUTJJJ </h1>
     <?php get_sidebar(); ?>
-    <?php include 'about.php';?>
     <?php get_footer(); ?>
 </body>
 </html>

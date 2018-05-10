@@ -26,12 +26,17 @@ a {
 
 /* Menus */
 
+.menu-item a{
+	padding: 0 2rem;
+}
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
+	float: right;
 	width: 100%;
-
+	.menu-top-menu-container {
+		height: 40px;
+	}
 	ul {
 		display: none;
 		list-style: none;

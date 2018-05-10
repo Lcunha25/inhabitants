@@ -1,3 +1,8 @@
+<?php
+/**
+* Template Name: journal
+*/
+?>
 <!DOCTYPE html>
 <html>
     <?php get_header(); ?>
@@ -10,7 +15,6 @@
 </head>
 <body>
     <?php get_sidebar(); ?>
-    <?php include 'page-journal.php';?>
     <?php get_footer(); ?>
 </body>
 </html>
