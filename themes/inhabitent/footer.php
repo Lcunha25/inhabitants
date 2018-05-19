@@ -20,13 +20,12 @@
 					</span>
 				</div>
 				<div class="operations">
-					<h1>BUSINESS HOURS</h1>
-					<p>Monday-Friday: 9am to 5pm</p>
-					<p>Saturday: 10am to 2pm</p>
-					<p>Sunday: Closed</p>
+					<?php get_sidebar(); ?>
 				</div>
 				<div class="logo-footer">
 				</div>
+				<span></span>
+
 				<div class="site-info">
 					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'COPYRIGHT © 2016 Inhabitants' ) ); ?></a>
 				</div> <!--.site-info -->

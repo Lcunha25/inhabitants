@@ -14,7 +14,12 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <?php get_sidebar(); ?>
+
+<?php
+   $args = array( 'post_type' => 'product');
+?>
+
+    <?php get_posts($args)?>
     <?php get_footer(); ?>
 </body>
 </html>

@@ -43,8 +43,28 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
-.header-pic {
-  width: 100%; }
+.nav-bar {
+  color: white;
+  margin: 0 10%;
+  padding: 10px 0;
+  width: 80%; }
+  .nav-bar .logo-nav {
+    color: white;
+    height: 33px;
+    width: 50px; }
+  .nav-bar #primary-menu {
+    width: 60%;
+    margin: 0px 21px 0px 0px;
+    float: right;
+    text-decoration: none; }
+
+#site-navigation {
+  height: 50px; }
+
+.site-header {
+  width: 80%;
+  position: fixed;
+  z-index: 1; }
 
 html {
   font-family: sans-serif;
@@ -431,15 +451,29 @@ a {
 
 /* Menus */
 .menu-item a {
-  padding: 0 2rem; }
+  padding: 10px 25px; }
+
+.nav-bar {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+#primary-menu {
+  height: 50px;
+  width: 375px; }
+
+.logo-nav {
+  float: left;
+  height: 75px; }
 
 .main-navigation {
   clear: both;
   display: block;
   float: right;
-  width: 100%; }
-  .main-navigation .menu-top-menu-container {
-    height: 40px; }
+  width: 100%;
+  height: 75px; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -610,6 +644,122 @@ a {
 .bypostauthor {
   display: block; }
 
+/* Objects/Wp_Query/Products/Blog Post */
+.blog-post {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  width: 80%;
+  margin: 0 10%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .blog-post header {
+    border: 1px solid #e1e1e1; }
+
+.logo-full {
+  height: 275px;
+  width: 275px; }
+
+.adventures-post {
+  display: grid;
+  width: 80%;
+  margin: 0 10%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-template-columns: 23% 23% 23% 23%;
+  grid-template-rows: 50% 50%; }
+  .adventures-post #post-134 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 3; }
+    .adventures-post #post-134 img {
+      height: 100%;
+      position: relative; }
+    .adventures-post #post-134 h2 {
+      position: absolute; }
+  .adventures-post #post-132 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 5; }
+  .adventures-post #post-130 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3; }
+  .adventures-post #post-128 {
+    grid-column-start: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 4; }
+
+.shop-types {
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  width: 80%;
+  margin: 0 10%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center; }
+  .shop-types .product_type_wrapper {
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    padding: .75rem; }
+    .shop-types .product_type_wrapper p {
+      display: block;
+      -webkit-margin-before: 1em;
+      -webkit-margin-after: 1em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px; }
+    .shop-types .product_type_wrapper a {
+      background: #248a83;
+      border: none;
+      border-radius: 0;
+      color: #fff;
+      cursor: pointer;
+      font-family: Novecento Sans Web,sans-serif;
+      font-size: 14.4px;
+      font-size: .9rem;
+      line-height: 1;
+      padding: .75rem 1.5rem;
+      text-decoration: none;
+      text-transform: uppercase; }
+  .shop-types .eat_stuff {
+    background-image: url("../../images/product-type-icons/eat.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+    height: 100px;
+    margin: 0px 0px 0px 25%; }
+  .shop-types .wear_stuff {
+    background-image: url("../../images/product-type-icons/wear.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+    height: 100px;
+    margin: 0px 0px 0px 25%; }
+  .shop-types .sleep_stuff {
+    background-image: url("../../images/product-type-icons/sleep.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+    height: 100px;
+    margin: 0px 0px 0px 25%; }
+  .shop-types .do_stuff {
+    background-image: url("../../images/product-type-icons/do.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+    height: 100px;
+    margin: 0px 0px 0px 25%; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -670,6 +820,10 @@ object {
 .gallery-caption {
   display: block; }
 
+.site-content img {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%); }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -682,21 +836,33 @@ object {
   height: 300px;
   width: 100%;
   background-image: url("../../images/dark-wood.png");
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: justify;
-      align-content: space-between; }
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 80% 20%; }
   .footer-wrapper .contact {
-    width: 29%; }
+    width: 100%;
+    color: white;
+    padding: 0 25px; }
+    .footer-wrapper .contact h1 {
+      color: Orange; }
   .footer-wrapper .operations {
-    width: 29%; }
+    width: 100%;
+    color: white;
+    padding: 0 25px; }
+    .footer-wrapper .operations h1 {
+      color: Orange; }
+    .footer-wrapper .operations .widget-area .weekday {
+      font-weight: bold; }
   .footer-wrapper .logo-footer {
     background-image: url("../../images/logos/inhabitent-logo-text.svg");
     background-repeat: no-repeat;
-    width: 29%; }
+    width: 100%;
+    height: 75px;
+    position: relative;
+    -ms-flex-item-align: center;
+        align-self: center; }
+  .footer-wrapper .site-info {
+    color: white; }
 
 .site-info a {
   position: absolute;

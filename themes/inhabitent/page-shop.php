@@ -14,7 +14,6 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <?php get_sidebar(); ?>
     <?php include 'shop.php';?>
     <?php get_footer(); ?>
 </body>
