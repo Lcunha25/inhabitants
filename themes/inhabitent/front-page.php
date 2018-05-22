@@ -5,15 +5,17 @@
  * @package RED_Starter_Theme
  */
 ?>
+        <?php get_header(); ?>
 	<body id="primary" class="content-area">
         <section class="background-image-main"> 
-        <?php get_header(); ?>
-            <div>
-            <?php 
-            $featured_img_url = get_the_post_thumbnail_url(); 
-            echo '<img src="'.esc_url($featured_img_url).'" rel="lightbox">'; 
-            ?>
-            <img class="logo-full" src='/images/logos/inhabitent-logo-full.svg'>
+            <div class="background-image-main-wrapper">
+                <?php 
+                $featured_img_url = get_the_post_thumbnail_url(); 
+                echo '<img src="'.esc_url($featured_img_url).'" rel="lightbox">'; 
+                ?>
+            </div>
+            <div class="logo-full">
+                <img src="/inhabitent/wp-content/themes/inhabitent/images/logos/inhabitent-logo-full.svg">
             </div>
         </section>
 		<main id="main" class="site-main" role="main">
@@ -44,7 +46,7 @@
             <section>
                 <h1> LATEST ADVENTURES </h1>
                 <div class="adventures-post">
-                <?php displayPost('5', '4'); ?>
+                <?php latestAdv('5', '4'); ?>
                 </div>
             </setion>
 		</main><!-- #main -->

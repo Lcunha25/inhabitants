@@ -14,12 +14,21 @@
     <script src="main.js"></script>
 </head>
 <body>
-
-<?php
-   $args = array( 'post_type' => 'product');
-?>
-
-    <?php get_posts($args)?>
+    <section class="background-image-main"> 
+        <div class="background-image-main-wrapper">
+            <?php 
+            $featured_img_url = get_the_post_thumbnail_url(); 
+            echo '<img src="'.esc_url($featured_img_url).'" rel="lightbox">'; 
+            ?>
+        </div>
+        <div class="title">
+            <h1 class="entry-title">About</h1>
+        </div>
+    </section>
+    <div class="entry-content">
+        <?php include 'inc/loop-journal.php'; 
+        displayPost('11', '2'); ?>
+    </div>
     <?php get_footer(); ?>
 </body>
 </html>

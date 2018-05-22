@@ -14,7 +14,27 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <?php include 'shop.php';?>
+    <section class="product-pictures-price">
+    <div class="page-shop-shop-stuff">
+        <h1>SHOP STUFF</h1>
+            <div>
+            <?php
+                $term = 'product_type';
+                $product_types = get_terms($term); 
+                foreach ($product_types as $product) {
+                    echo "<ul class='product-type-ul'>";
+                    $url = get_site_url() . '/' . $term.'/'.$product->slug;
+                    echo '<li>' . "<a href=$url>" . explode(" ", $product->name)[0] . "</a>" . '<li>';
+                    echo "<ul>";
+                } 
+            ?>
+            </div>
+        </div>
+        <div class="product-type-post">
+        <?php include 'inc/loop-journal.php'; 
+            productLoop();?>
+        </div>
+    </section>
     <?php get_footer(); ?>
 </body>
 </html>

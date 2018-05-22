@@ -11,8 +11,8 @@
 			<div class="footer-wrapper">
 				<div class="contact">
 					<h1><i class="fas fa-envelope"></i> CONTACT INFO</h1>
-					<p>info@inhabitents.com</p>
-					<p>778-456-7891</p>
+					<p><i class="fa fa-envelope"></i> info@inhabitents.com</p>
+					<p><i class="fas fa-phone"></i> 778-456-7891</p>
 					<span>
 						<i class="fab fa-facebook"></i>
 						<i class="fab fa-twitter-square"></i>
@@ -24,6 +24,7 @@
 				</div>
 				<div class="logo-footer">
 				</div>
+				<!-- span used to place opyright info on middle of page -->
 				<span></span>
 
 				<div class="site-info">

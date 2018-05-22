@@ -63,7 +63,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 .site-header {
   width: 80%;
-  position: fixed;
   z-index: 1; }
 
 html {
@@ -656,10 +655,6 @@ a {
   .blog-post header {
     border: 1px solid #e1e1e1; }
 
-.logo-full {
-  height: 275px;
-  width: 275px; }
-
 .adventures-post {
   display: grid;
   width: 80%;
@@ -760,6 +755,124 @@ a {
     height: 100px;
     margin: 0px 0px 0px 25%; }
 
+.background-image-main {
+  position: relative;
+  min-height: 700px;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .background-image-main .background-image-main-wrapper img {
+    -webkit-filter: brightness(60%);
+            filter: brightness(60%);
+    position: absolute; }
+  .background-image-main .logo-full {
+    height: 700px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .background-image-main .logo-full img {
+      position: absolute; }
+
+.site-main h1 {
+  text-align: center; }
+
+.main-find-us-page {
+  display: grid;
+  grid-template-columns: auto auto; }
+
+.google-maps iframe {
+  height: 350px;
+  width: 100%;
+  padding: 0px;
+  border-width: 0px;
+  margin: 0px;
+  left: 0px;
+  top: 0px; }
+
+.find-us-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
+.find-us-left-wrapper {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%; }
+
+.find-us-right-wrapper {
+  padding-left: 5%; }
+
+.title {
+  height: 700px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Novecento Sans Web,sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+  .title .entry-title {
+    position: absolute;
+    color: white; }
+
+.entry-content {
+  margin: 3rem auto;
+  max-width: 800px; }
+  .entry-content h2 {
+    text-align: center; }
+    .entry-content h2 a {
+      text-decoration: none;
+      color: #2f1339;
+      font-size: 33.6px;
+      font-size: 2.1rem;
+      margin-bottom: 1.5rem; }
+
+.page-shop-shop-stuff {
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 3rem;
+  text-align: center; }
+
+.product-type-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  text-transform: uppercase; }
+  .product-type-ul li a {
+    color: #248a83;
+    text-decoration: none; }
+
+.product-pictures-price {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+  .product-pictures-price .product-type-post {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    margin-bottom: 1.5rem; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -819,10 +932,6 @@ object {
 
 .gallery-caption {
   display: block; }
-
-.site-content img {
-  -webkit-filter: brightness(60%);
-          filter: brightness(60%); }
 
 /*--------------------------------------------------------------
 # Page Templates

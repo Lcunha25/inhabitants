@@ -1,0 +1,34 @@
+.body-find-us {
+    // display: flex;
+    // -ms-flex-direction: column;
+    // flex-direction: column;
+    // min-height: 100vh;
+}
+.main-find-us-page {
+    display: grid;
+    grid-template-columns: auto auto
+}
+
+.google-maps {
+    iframe {
+        height: 350px;
+        width: 100%;
+        padding: 0px;
+        border-width: 0px;
+        margin: 0px;
+        left: 0px;
+        top: 0px;
+    }
+}
+.find-us-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+}
+.find-us-left-wrapper {
+    border-right: 1px solid #e1e1e1;
+    padding-right: 5%;
+}
+.find-us-right-wrapper {
+    padding-left: 5%;
+}

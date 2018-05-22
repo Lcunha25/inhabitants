@@ -10,10 +10,6 @@
 		border: 1px solid #e1e1e1;
 	}
 }
-.logo-full{
-    height: 275px;
-    width: 275px;
-}
 
 .adventures-post{
 	display: grid;
@@ -122,5 +118,33 @@
         width: 50%;
         height: 100px;
         margin: 0px 0px 0px 25%;
+    }
+}
+
+// Main and About pages media
+.background-image-main{
+    position: relative;
+    min-height: 700px;
+    overflow: hidden;
+    align-items: center;
+    .background-image-main-wrapper img {
+        filter: brightness(60%);
+        position: absolute;
+    }
+    .logo-full {
+        height: 700px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            position: absolute;
+        }
+
+    }
+}
+.site-main {
+    h1{
+        text-align: center;
     }
 }
