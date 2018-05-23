@@ -32,11 +32,11 @@
                     } 
                 ?>
                 </div>
-            </div>
+        </div>
             <div class="product-type-post">
             <?php include 'inc/loop-journal.php'; 
                 productLoop();?>
-        </div>
+            </div>
     </div>
     </div>
     </section>

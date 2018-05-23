@@ -673,7 +673,98 @@ a {
   margin-right: auto;
   width: 1120px; }
 
-/* Objects/Wp_Query/Products/Blog Post */
+.background-image-main {
+  position: relative;
+  min-height: 700px;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .background-image-main .background-image-main-wrapper img {
+    -webkit-filter: brightness(60%);
+            filter: brightness(60%);
+    position: absolute; }
+  .background-image-main .logo-full {
+    height: 700px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .background-image-main .logo-full img {
+      position: absolute; }
+
+.site-main h1 {
+  text-align: center; }
+
+.shop-types {
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center; }
+  .shop-types .product_type_wrapper {
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    padding: .75rem; }
+    .shop-types .product_type_wrapper p {
+      display: block;
+      -webkit-margin-before: 1em;
+      -webkit-margin-after: 1em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px; }
+    .shop-types .product_type_wrapper a {
+      background: #248a83;
+      border: none;
+      border-radius: 0;
+      color: #fff;
+      cursor: pointer;
+      font-family: Novecento Sans Web,sans-serif;
+      font-size: 14.4px;
+      font-size: .9rem;
+      line-height: 1;
+      padding: .75rem 1.5rem;
+      text-decoration: none;
+      text-transform: uppercase; }
+  .shop-types .eat_stuff {
+    background-image: url("../../images/product-type-icons/eat.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+    height: 100px;
+    margin: 0px 0px 0px 25%; }
+  .shop-types .wear_stuff {
+    background-image: url("../../images/product-type-icons/wear.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+    height: 100px;
+    margin: 0px 0px 0px 25%; }
+  .shop-types .sleep_stuff {
+    background-image: url("../../images/product-type-icons/sleep.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+    height: 100px;
+    margin: 0px 0px 0px 25%; }
+  .shop-types .do_stuff {
+    background-image: url("../../images/product-type-icons/do.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+    height: 100px;
+    margin: 0px 0px 0px 25%; }
+
 .blog-post {
   display: grid;
   grid-template-columns: repeat(3, 33%);
@@ -790,26 +881,43 @@ a {
   padding: 10px 20px;
   text-decoration: none; }
 
+.li-adventures-wapper {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  height: 100%; }
+  .li-adventures-wapper img {
+    height: 100%; }
+
+.warpping-text-adventures {
+  position: absolute;
+  top: 0px; }
+  .warpping-text-adventures h2 a {
+    color: white; }
+  .warpping-text-adventures .adventure-button {
+    color: white; }
+
+.front-page-adventure-wrapper {
+  height: 550px;
+  margin-bottom: 4.5rem; }
+
 .adventures-post {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-rows: 2fr;
+  grid-template-rows: 1fr 1fr;
   grid-gap: 20px 20px;
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
   width: 100%;
-  margin-bottom: 4.5rem; }
+  height: 550px; }
   .adventures-post #post-134 {
+    position: relative;
     grid-column: 1/span 2;
     grid-row: 1/span 2; }
-    .adventures-post #post-134 .li-adventures-wapper {
-      bottom: 0;
-      left: 0;
-      right: 0;
-      top: 0;
-      z-index: 1; }
   .adventures-post #post-132 {
+    position: relative;
     grid-column: 3/span 2;
     grid-row: 1/span 1; }
   .adventures-post #post-130 {
@@ -822,98 +930,6 @@ a {
     overflow: hidden;
     position: relative;
     width: 100%; }
-
-.shop-types {
-  display: grid;
-  grid-template-columns: repeat(4, 24%);
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: center; }
-  .shop-types .product_type_wrapper {
-    border: 1px solid #e1e1e1;
-    border-top-width: 5px;
-    padding: .75rem; }
-    .shop-types .product_type_wrapper p {
-      display: block;
-      -webkit-margin-before: 1em;
-      -webkit-margin-after: 1em;
-      -webkit-margin-start: 0px;
-      -webkit-margin-end: 0px; }
-    .shop-types .product_type_wrapper a {
-      background: #248a83;
-      border: none;
-      border-radius: 0;
-      color: #fff;
-      cursor: pointer;
-      font-family: Novecento Sans Web,sans-serif;
-      font-size: 14.4px;
-      font-size: .9rem;
-      line-height: 1;
-      padding: .75rem 1.5rem;
-      text-decoration: none;
-      text-transform: uppercase; }
-  .shop-types .eat_stuff {
-    background-image: url("../../images/product-type-icons/eat.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 50%;
-    height: 100px;
-    margin: 0px 0px 0px 25%; }
-  .shop-types .wear_stuff {
-    background-image: url("../../images/product-type-icons/wear.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 50%;
-    height: 100px;
-    margin: 0px 0px 0px 25%; }
-  .shop-types .sleep_stuff {
-    background-image: url("../../images/product-type-icons/sleep.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 50%;
-    height: 100px;
-    margin: 0px 0px 0px 25%; }
-  .shop-types .do_stuff {
-    background-image: url("../../images/product-type-icons/do.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 50%;
-    height: 100px;
-    margin: 0px 0px 0px 25%; }
-
-.background-image-main {
-  position: relative;
-  min-height: 700px;
-  overflow: hidden;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .background-image-main .background-image-main-wrapper img {
-    -webkit-filter: brightness(60%);
-            filter: brightness(60%);
-    position: absolute; }
-  .background-image-main .logo-full {
-    height: 700px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .background-image-main .logo-full img {
-      position: absolute; }
-
-.site-main h1 {
-  text-align: center; }
 
 .main-find-us-page {
   display: grid;
@@ -1366,6 +1382,26 @@ a {
     height: 50;
     border-radius: 15px;
     background-color: transparent; }
+
+.archive-content-area {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  padding-top: 50px; }
+  .archive-content-area .archive-site-main {
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+
+.archive-product-type-post {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  margin-bottom: 1.5rem; }
+
+.archive-page-header {
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 3rem;
+  text-align: center; }
 
 /*--------------------------------------------------------------
 # Media

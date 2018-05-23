@@ -1,5 +1,5 @@
 <?php 
-// function used on about page.
+// function used on "page-about.php" page.
 
     function displayPost ($cat, $postPP){
         $query = "cat=$cat&posts_per_page=$postPP";
@@ -32,7 +32,7 @@
 ?>
 
 <?php 
-// function used in front page for Inhabitent journal
+// function used in "front-page.php" for Inhabitent journal
     function journal ($cat, $postPP){
         $query = "cat=$cat&posts_per_page=$postPP";
 
@@ -72,7 +72,7 @@
 ?>
 
 <?php 
-// function used in front page Latest Adventures
+// function used in "front-page.php" Latest Adventures
     function latestAdv ($cat, $postPP){
         $query = "cat=$cat&posts_per_page=$postPP";
 
@@ -112,7 +112,7 @@
 
 
 <?php
-// function for shop page. Importing product picture with price and name.
+// function for "page-shop.php" page. Importing product picture with price and name.
     function productLoop(){
 	$args = array(
 		'post_type' => 'product',
@@ -124,13 +124,14 @@
 ?>
 	<?php if ( $products->have_posts() ) : ?>
 		<?php while ( $products->have_posts() ) : $products->the_post(); ?>
+		<?php $image = CFS()->get('image'); ?>
 		<div class = "entry-post product-post">
 			<div class = "entry-thumbnail" style = "background-image: url(<?php echo CFS()->get('image'); ?>) ">
 				<a href= <?php the_permalink(); ?>></a>
 			</div>
 			<div class="entry-info">
 				<div class="journal-image-wrapper">
-				<img src=<?php echo CFS()->get('image'); ?>>
+				<?php echo "<a href=" . get_permalink() . "><img src=$image></a>" ?>
 				</div>
 				<div class="journal-price-wrapper">
 				<span><?php echo CFS()->get('price'); ?></span>
@@ -145,8 +146,9 @@
 <?php endif; ?>
 <?php } ?>
 
+
 <?php 
-// function used in journal page for journal display loop
+// function used in journal page for "journal.php" display loop
     function journalPage($cat, $postPP){
         $query = "cat=$cat&posts_per_page=$postPP";
 
@@ -176,3 +178,47 @@
              endif; 
     }
 ?>
+
+<?php
+// function for "archive.php". Importing product picture with price and name separated by category.
+    function productLoopCategory(){
+	$args = array(
+		'post_type' => 'product',
+		'posts_per_page' => -1,
+		'orderby'=> 'title',
+		'order' => 'ASC',
+	);
+	$products = new WP_Query( $args );
+?>
+<?php if ( have_posts() ) : ?>
+
+
+</header><!-- .page-header -->
+
+<?php /* Start the Loop */ ?>
+<?php while ( have_posts() ) : the_post(); ?>
+		<?php $image = CFS()->get('image'); ?>
+		<div class = "entry-post product-post">
+			<div class = "entry-thumbnail" style = "background-image: url(<?php echo CFS()->get('image'); ?>) ">
+			</div>
+			<div class="entry-info">
+				<div class="journal-image-wrapper">
+				<?php echo "<a href=" . get_permalink() . "><img src=$image></a>" ?>
+				</div>
+				<div class="journal-price-wrapper">
+				<span><?php echo CFS()->get('price'); ?></span>
+				<span><?php the_title(); ?></span>
+				</div>
+			</div>
+		</div>
+
+<?php endwhile; ?>
+
+<?php the_posts_navigation(); ?>
+
+<?php else : ?>
+
+<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+<?php endif; ?>
+<?php } ?>

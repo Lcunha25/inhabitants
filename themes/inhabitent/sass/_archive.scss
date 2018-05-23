@@ -1,0 +1,21 @@
+.archive-content-area{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+    padding-top: 50px;
+    .archive-site-main{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+.archive-product-type-post {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.archive-page-header {
+    border-bottom: 1px dashed #c8c8c8;
+    margin-bottom: 3rem;
+    text-align: center;
+}

@@ -5,8 +5,107 @@
     margin-right: auto;
     width: 1120px;
 }
-/* Objects/Wp_Query/Products/Blog Post */
 
+
+// Main and About pages media
+.background-image-main{
+    position: relative;
+    min-height: 700px;
+    overflow: hidden;
+    align-items: center;
+    .background-image-main-wrapper img {
+        filter: brightness(60%);
+        position: absolute;
+    }
+    .logo-full {
+        height: 700px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            position: absolute;
+        }
+
+    }
+}
+.site-main {
+    h1{
+        text-align: center;
+    }
+}
+// Shop Stuff:
+// product types need to be added individually as each has a image being added from CSS
+.shop-types {
+	display: grid;
+    grid-template-columns: repeat(4, 24%);
+	justify-content: space-between;	
+	text-align: center;
+	.product_type_wrapper {
+		border: 1px solid #e1e1e1;
+		border-top-width: 5px;
+		padding: .75rem;
+		p {
+			display: block;
+			-webkit-margin-before: 1em;
+			-webkit-margin-after: 1em;
+			-webkit-margin-start: 0px;
+			-webkit-margin-end: 0px;
+		}
+		a {
+			background: #248a83;
+			border: none;
+			border-radius: 0;
+			color: #fff;
+			cursor: pointer;
+			font-family: Novecento Sans Web,sans-serif;
+			font-size: 14.4px;
+			font-size: .9rem;
+			line-height: 1;
+			padding: .75rem 1.5rem;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+    }
+    .eat_stuff {
+        background-image: url('../../images/product-type-icons/eat.svg');
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 50%;
+        height: 100px;
+        margin: 0px 0px 0px 25%;
+    }
+    .wear_stuff {
+        background-image: url('../../images/product-type-icons/wear.svg');
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 50%;
+        height: 100px;
+        margin: 0px 0px 0px 25%;
+    }
+    .sleep_stuff {
+        background-image: url('../../images/product-type-icons/sleep.svg');
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 50%;
+        height: 100px;
+        margin: 0px 0px 0px 25%;
+    }
+    .do_stuff {
+        background-image: url('../../images/product-type-icons/do.svg');
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 50%;
+        height: 100px;
+        margin: 0px 0px 0px 25%;
+    }
+}
+
+// Inhabitent journal:
 .blog-post{
 	display: grid;
     grid-template-columns: repeat(3, 33%);
@@ -17,6 +116,7 @@
 		border: 1px solid #e1e1e1;
 	}
 }
+// Blog post done individually as some of them are not taking property correctly
 #post-212 {
 	.li-journal-wapper{
 		overflow: hidden;
@@ -148,30 +248,50 @@
 	}
 }
 
+// Latest adventures:
+// Done individually for each post as we have different grid formats
+.li-adventures-wapper{
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	height: 100%;
+	img {
+		height: 100%;
+	}
+}
+.warpping-text-adventures {
+	position: absolute;
+	top: 0px;
+	h2 a {
+		color: white;
+	}
+	.adventure-button {
+		color: white;
+	}
+}
+.front-page-adventure-wrapper {
+	height: 550px;
+	margin-bottom: 4.5rem;
+}
 .adventures-post{
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-rows: 2fr;
+	grid-template-rows: 1fr 1fr;
     grid-gap: 20px 20px;
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
 	width: 100%;
-	margin-bottom: 4.5rem;
+	height: 550px;
 	#post-134{
+		position: relative;
 		grid-column: 1/span 2;
 		grid-row: 1/span 2;
-		.li-adventures-wapper{
-			bottom: 0;
-			left: 0;
-			right: 0;
-			top: 0;
-			z-index: 1;
-			img {
-			}
-		}
+		
 	}
 	#post-132{
+		position: relative;
 		grid-column: 3/span 2;
 		grid-row: 1/span 1;
 	}
@@ -187,101 +307,4 @@
 		position: relative;
 		width: 100%;
 	}
-}
-
-.shop-types {
-	display: grid;
-    grid-template-columns: repeat(4, 24%);
-	justify-content: space-between;	
-	text-align: center;
-	.product_type_wrapper {
-		border: 1px solid #e1e1e1;
-		border-top-width: 5px;
-		padding: .75rem;
-		p {
-			display: block;
-			-webkit-margin-before: 1em;
-			-webkit-margin-after: 1em;
-			-webkit-margin-start: 0px;
-			-webkit-margin-end: 0px;
-		}
-		a {
-			background: #248a83;
-			border: none;
-			border-radius: 0;
-			color: #fff;
-			cursor: pointer;
-			font-family: Novecento Sans Web,sans-serif;
-			font-size: 14.4px;
-			font-size: .9rem;
-			line-height: 1;
-			padding: .75rem 1.5rem;
-			text-decoration: none;
-			text-transform: uppercase;
-		}
-    }
-    .eat_stuff {
-        background-image: url('../../images/product-type-icons/eat.svg');
-        background-repeat:no-repeat;
-        background-position: center;
-        background-size: contain;
-        width: 50%;
-        height: 100px;
-        margin: 0px 0px 0px 25%;
-    }
-    .wear_stuff {
-        background-image: url('../../images/product-type-icons/wear.svg');
-        background-repeat:no-repeat;
-        background-position: center;
-        background-size: contain;
-        width: 50%;
-        height: 100px;
-        margin: 0px 0px 0px 25%;
-    }
-    .sleep_stuff {
-        background-image: url('../../images/product-type-icons/sleep.svg');
-        background-repeat:no-repeat;
-        background-position: center;
-        background-size: contain;
-        width: 50%;
-        height: 100px;
-        margin: 0px 0px 0px 25%;
-    }
-    .do_stuff {
-        background-image: url('../../images/product-type-icons/do.svg');
-        background-repeat:no-repeat;
-        background-position: center;
-        background-size: contain;
-        width: 50%;
-        height: 100px;
-        margin: 0px 0px 0px 25%;
-    }
-}
-
-// Main and About pages media
-.background-image-main{
-    position: relative;
-    min-height: 700px;
-    overflow: hidden;
-    align-items: center;
-    .background-image-main-wrapper img {
-        filter: brightness(60%);
-        position: absolute;
-    }
-    .logo-full {
-        height: 700px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img {
-            position: absolute;
-        }
-
-    }
-}
-.site-main {
-    h1{
-        text-align: center;
-    }
 }
