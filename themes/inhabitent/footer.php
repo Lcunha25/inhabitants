@@ -20,7 +20,7 @@
 					</span>
 				</div>
 				<div class="operations">
-					<?php get_sidebar(); ?>
+                <?php include('sidebar.php'); ?>
 				</div>
 				<div class="logo-footer">
 				</div>
@@ -28,7 +28,7 @@
 				<span></span>
 
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'COPYRIGHT © 2016 Inhabitants' ) ); ?></a>
+					<p> COPYRIGHT © 2016 Inhabitants </p>
 				</div> <!--.site-info -->
 			</div>
 		</footer><!-- #colophon -->

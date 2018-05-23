@@ -4,6 +4,14 @@
 
 /* Posts and pages */
 
+#content {
+	padding-top: 50px;
+	#primary {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+}
+
 .sticky {
 	display: block;
 }

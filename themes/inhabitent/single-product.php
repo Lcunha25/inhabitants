@@ -6,31 +6,42 @@
  */
 
 get_header();
-$price = CFS()->get( 'price' );
-$excerpt = CFS()->get( 'excerpt' );
-$image = CFS()->get( 'image' );
-echo "<p class=\"product-price\">{$price}</p>";
-echo "<p class=\"product-excerpt\">{$excerpt}</p>";
-echo "<p class=\"product-image\">{$image}</p>";
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="single-product-content-area">
+		<main id="main" class="single-product-site-main" role="main">
+		<?php $image = CFS()->get( 'image' ); 
+			$price = CFS()->get( 'price' );
+		?>
+		<?php if ( have_posts() ) : ?>
 
-		<?php while ( have_posts() ) : the_post(); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-            <?php echo CFS()->get( 'Price' ); ?>
-			<?php the_post_navigation(); ?>
+				<?php
+					echo "<div class='single-page-image-wrapper'>";
+					echo "<img class=\"product-image\" src={$image}>";
+					echo "</div>";
+					echo "<div class='single-product-text-wrapper'>";
+					echo "<h2>" . get_the_title() . "</h2>";
+					echo "<p class=\"product-price\">{$price}</p>";
+					echo "<p>" . the_content() . "</p>";
+					echo "<div class='single-product-button-wrapper'>
+					<button type='button' class='single-product-button'><i class='fab fa-facebook-f'></i> Like</button>
+					<button type='button' class='single-product-button'><i class='fab fa-twitter'></i> Tweet</button>
+					<button type='button' class='single-product-button'><i class='fab fa-pinterest'></i> Pin</button>
+						</div>";
+					echo "</div>";
+				?>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+			<?php endwhile; ?>
 
-		<?php endwhile; // End of the loop. ?>
+			<?php the_posts_navigation(); ?>
+
+		<?php else : ?>
+
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+		<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

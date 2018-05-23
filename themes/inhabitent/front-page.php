@@ -7,7 +7,7 @@
 ?>
         <?php get_header(); ?>
 	<body id="primary" class="content-area">
-        <section class="background-image-main"> 
+        <div class="background-image-main"> 
             <div class="background-image-main-wrapper">
                 <?php 
                 $featured_img_url = get_the_post_thumbnail_url(); 
@@ -17,9 +17,9 @@
             <div class="logo-full">
                 <img src="/inhabitent/wp-content/themes/inhabitent/images/logos/inhabitent-logo-full.svg">
             </div>
-        </section>
+        </div>
 		<main id="main" class="site-main" role="main">
-            <section>
+            <section class="sections">
                 <h1>SHOP STUFF</h1>
                 <div class="shop-types">
                 <?php
@@ -36,18 +36,18 @@
                 ?>
                 </div>
             </section>
-            <section>
+            <section class="sections">
                 <h1> INHABITENT JOURNAL </h1>
-                <div class="blog-post">
+                <ul class="blog-post">
                 <?php include 'inc/loop-journal.php'; 
-                displayPost('4', '3');?>
-                </div>
-            </setion>
-            <section>
+                journal('4', '3');?>
+                </ul>
+            </section>
+            <section class="sections">
                 <h1> LATEST ADVENTURES </h1>
-                <div class="adventures-post">
+                <ul class="adventures-post">
                 <?php latestAdv('5', '4'); ?>
-                </div>
+                </ul>
             </setion>
 		</main><!-- #main -->
 	</body><!-- #primary -->

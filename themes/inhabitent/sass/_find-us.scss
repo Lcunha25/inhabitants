@@ -1,9 +1,3 @@
-.body-find-us {
-    // display: flex;
-    // -ms-flex-direction: column;
-    // flex-direction: column;
-    // min-height: 100vh;
-}
 .main-find-us-page {
     display: grid;
     grid-template-columns: auto auto
@@ -20,7 +14,7 @@
         top: 0px;
     }
 }
-.find-us-content {
+.site-content {
     margin-left: auto;
     margin-right: auto;
     width: 1120px;
@@ -28,7 +22,66 @@
 .find-us-left-wrapper {
     border-right: 1px solid #e1e1e1;
     padding-right: 5%;
+    h1 {
+        color: #2f1339;
+        font-size: 33.6px;
+        font-size: 2.1rem;
+        margin-bottom: 1.5rem;
+    }
 }
 .find-us-right-wrapper {
     padding-left: 5%;
+}
+
+.input-line{
+    width: 100%;
+    .email-input {
+        width: 50%;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        padding: 0px 0px 0px 10px;
+        margin-right: 5px;
+        background-color: lightgray;
+    }
+    .section-button {
+        appearance: none;
+        background-color: white;
+        width: 40%;
+        height: 40px;
+        border-radius: 5px;
+        overflow: hidden;
+        .revert-triangle{
+            position: relative;
+            bottom: 30px;
+            float: right;
+            right: 10px;
+            height: 1px;
+            img {
+                height: 15px;
+            }
+        }
+        svg {
+            position: relative;
+            bottom: 50px;
+            float: right;
+            right: 20px;
+        }
+    }
+    .section {
+        border: none;
+        background-color: lightgray;
+        width: 100%;
+        height: 20px;
+        margin: 10px 0;
+    }
+    .submit {
+        margin: 10px;
+        padding: 0px;
+        margin: 20px 0px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        width: 50%;
+    }
 }

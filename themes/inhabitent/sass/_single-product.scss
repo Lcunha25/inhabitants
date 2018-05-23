@@ -1,0 +1,45 @@
+.single-product-content-area{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+    padding-top: 50px;
+    .single-product-site-main{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 30px;
+    }
+}
+
+.single-product-text-wrapper {
+    h2{
+        color: #d99054;
+        font-size: 38.4px;
+        font-size: 2.4rem;
+        margin:0 0 .5rem 0;
+    }
+    .product-price {
+        font-family: Novecento Sans Web,sans-serif;
+        font-size: 28.8px;
+        font-size: 1.8rem;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    p {
+        color: #404040;
+        font-family: Merriweather Web,serif;
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 1.75;
+        margin: 0;
+    }
+    .single-product-button-wrapper{
+        height: 50px;
+        .single-product-button{
+            height: 50;
+            border-radius: 15px;
+            background-color: transparent;
+        }
+    }
+}

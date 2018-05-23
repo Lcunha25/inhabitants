@@ -1,8 +1,17 @@
+.site-header {
+    background-color: hsla(0,0%,100%,.85);
+    border-bottom: 1px solid #e1e1e1;
+    padding: .5rem 0;
+    position: fixed;
+    transition: top .5s linear;
+    width: 100%;
+    z-index: 3;
+}
+
 .nav-bar{
     color: white;
     margin: 0 10%;
     padding: 10px 0;
-    width:80%;
     .logo-nav{
         color: white;
         height:33px;
@@ -13,13 +22,28 @@
         margin: 0px 21px 0px 0px;
         float: right;
         text-decoration: none;
+        li a{
+            color: #248a83;
+        }
     }
 }
 #site-navigation {
+    display: flex;
     height: 50px;
 }
-.site-header{
+
+.menu-top-menu-container {
     width: 80%;
-    // position: fixed;
-    z-index: 1;
+}
+
+.header-search {
+    fieldset {
+        height: 50px;
+        border: none;
+    }
+}
+.search-toggle {
+    i {
+        color: #248a83;
+    }
 }

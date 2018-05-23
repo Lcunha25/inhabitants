@@ -1,13 +1,16 @@
-$Orange: #d99054;
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 
 /* footer */
-.footer-wrapper{
-    height: 300px;
-    width: 100%;
+.site-footer{
     background-image: url("../../images/dark-wood.png");
+}
+.footer-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+    height: 300px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 80% 20%;
@@ -17,7 +20,11 @@ $Orange: #d99054;
         color: white;
         padding: 0 25px;
         h1 {
-            color: Orange;
+            color: #d99054;
+            font-size: 19.2px;
+            font-size: 1.2rem;
+            margin-bottom: .75rem;
+            text-transform: uppercase;
         }
     }
     .operations{
@@ -25,7 +32,11 @@ $Orange: #d99054;
         color: white;
         padding: 0 25px;
         h1 {
-            color: Orange;
+            color: #d99054;
+            font-size: 19.2px;
+            font-size: 1.2rem;
+            margin-bottom: .75rem;
+            text-transform: uppercase;
         }
         .widget-area .weekday {
             font-weight: bold;
