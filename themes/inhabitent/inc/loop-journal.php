@@ -222,3 +222,15 @@
 
 <?php endif; ?>
 <?php } ?>
+
+<?php
+// function to change color of logo and writtings depending on page
+// function selectHeader(){
+// 	$url = $_SERVER["REQUEST_URI"];
+// 	if (strpos($url, "about/") === 0) {
+// 		return true; 
+// 	} else {
+// 		return false;
+// 	}
+// }
+// ?>
