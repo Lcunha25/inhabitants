@@ -31,7 +31,8 @@
 }
 .site-main {
     h1{
-        text-align: center;
+		text-align: center;
+		color: $purple;
     }
 }
 // Shop Stuff:
@@ -51,12 +52,13 @@
 			-webkit-margin-after: 1em;
 			-webkit-margin-start: 0px;
 			-webkit-margin-end: 0px;
+			font-family: 'Merriweather', serif;
 		}
 		a {
-			background: #248a83;
+			background: $green;
 			border: none;
 			border-radius: 0;
-			color: #fff;
+			color: white;
 			cursor: pointer;
 			font-family: Novecento Sans Web,sans-serif;
 			font-size: 14.4px;
@@ -114,137 +116,30 @@
 	padding: 0px;
 	li {
 		border: 1px solid #e1e1e1;
-	}
-}
-// Blog post done individually as some of them are not taking property correctly
-#post-212 {
-	.li-journal-wapper{
-		overflow: hidden;
-		img{
-			left: 50%;
-			max-height: 250px;
-			max-width: none;
-			width: auto;
+		.li-journal-wapper{
+			overflow: hidden;
+			img{
+				left: 50%;
+				max-height: 250px;
+				max-width: none;
+				width: 100%;
+			}
 		}
-	}
-	.warpping-text-journal{
-		h2 a {
-	color: #248a83;
-	text-decoration: none;
+		.warpping-text-journal{
+			h2 a {
+				color: $green;
+				text-decoration: none;
+			}
 		}
-	}
-	.journal-button {
-		position: relative;
-		bottom: .75rem;
-		left: .75rem;
-		border: 1px solid #000;
-		color: #000;
-		padding: 10px 20px;
-		text-decoration: none;
-	}
-}
-#post-210 {
-	.li-journal-wapper{
-		overflow: hidden;
-		img{
-			left: 50%;
-			max-height: 250px;
-			max-width: none;
-			width: 100%;
+		.journal-button {
+			position: relative;
+			bottom: .75rem;
+			left: .75rem;
+			border: 1px solid #000;
+			color: #000;
+			padding: 10px 20px;
+			text-decoration: none;
 		}
-	}
-	.warpping-text-journal{
-		h2 a {
-	color: #248a83;
-	text-decoration: none;
-		}
-	}
-	.journal-button {
-		position: relative;
-		bottom: .75rem;
-		left: .75rem;
-		border: 1px solid #000;
-		color: #000;
-		padding: 10px 20px;
-		text-decoration: none;
-	}
-}
-#post-124 {
-	.li-journal-wapper{
-		overflow: hidden;
-		img{
-			left: 50%;
-			max-height: 250px;
-			max-width: none;
-			width: auto;
-		}
-	}
-	.warpping-text-journal{
-		h2 a {
-	color: #248a83;
-	text-decoration: none;
-		}
-	}
-	.journal-button {
-		position: relative;
-		bottom: .75rem;
-		left: .75rem;
-		border: 1px solid #000;
-		color: #000;
-		padding: 10px 20px;
-		text-decoration: none;
-	}
-}
-#post-122 {
-	.li-journal-wapper{
-		overflow: hidden;
-		img{
-			left: 50%;
-			max-height: 250px;
-			max-width: none;
-			width: auto;
-		}
-	}
-	.warpping-text-journal{
-		h2 a {
-	color: #248a83;
-	text-decoration: none;
-		}
-	}
-	.journal-button {
-		position: relative;
-		bottom: .75rem;
-		left: .75rem;
-		border: 1px solid #000;
-		color: #000;
-		padding: 10px 20px;
-		text-decoration: none;
-	}
-}
-#post-120 {
-	.li-journal-wapper{
-		overflow: hidden;
-		img{
-			left: 50%;
-			max-height: 250px;
-			max-width: none;
-			width: auto;
-		}
-	}
-	.warpping-text-journal{
-		h2 a {
-	color: #248a83;
-	text-decoration: none;
-		}
-	}
-	.journal-button {
-		position: relative;
-		bottom: .75rem;
-		left: .75rem;
-		border: 1px solid #000;
-		color: #000;
-		padding: 10px 20px;
-		text-decoration: none;
 	}
 }
 
@@ -264,47 +159,123 @@
 .warpping-text-adventures {
 	position: absolute;
 	top: 0px;
+	margin: 20px;
+	font-family: 'Merriweather', serif;
 	h2 a {
 		color: white;
+		font-size: 25.6px;
+		font-size: 1.6rem;
 	}
-	.adventure-button {
+	.adventures-button {
+		text-decoration: none;
 		color: white;
+		border: 1px solid white;
+		background-color: transparent;
+		padding: 10px;
 	}
-}
-.front-page-adventure-wrapper {
-	height: 550px;
-	margin-bottom: 4.5rem;
 }
 .adventures-post{
 	display: grid;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 275px 275px;
     grid-gap: 20px 20px;
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
 	width: 100%;
+	margin-bottom: 4.5rem;
 	height: 550px;
-	#post-134{
+	:nth-child(1){
 		position: relative;
 		grid-column: 1/span 2;
 		grid-row: 1/span 2;
+		.warpping-text-adventures {
+			position: absolute;
+			top: 0px;
+			margin: 20px;
+			font-family: 'Merriweather', serif;
+			h2 a {
+			font-size: 48px;
+			font-size: 3rem;
+			}
+			.adventures-button {
+				text-decoration: none;
+				color: white;
+				border: 1px solid white;
+				background-color: transparent;
+				padding: 10px;
+			}
+		}
 		
 	}
-	#post-132{
+	:nth-child(2){
 		position: relative;
 		grid-column: 3/span 2;
 		grid-row: 1/span 1;
+		.warpping-text-adventures {
+			position: absolute;
+			top: 0px;
+			margin: 20px;
+			font-family: 'Merriweather', serif;
+			h2 a {
+				color: white;
+				font-size: 25.6px;
+				font-size: 1.6rem;
+			}
+			.adventures-button {
+				text-decoration: none;
+				color: white;
+				border: 1px solid white;
+				background-color: transparent;
+				padding: 10px;
+			}
+		}
 	}
-	#post-130{
+	:nth-child(3){
 		line-height: 1;
 		overflow: hidden;
 		position: relative;
 		width: 100%;
+		.warpping-text-adventures {
+			position: absolute;
+			top: 0px;
+			margin: 20px;
+			font-family: 'Merriweather', serif;
+			h2 a {
+				color: white;
+				font-size: 25.6px;
+				font-size: 1.6rem;
+			}
+			.adventures-button {
+				text-decoration: none;
+				color: white;
+				border: 1px solid white;
+				background-color: transparent;
+				padding: 10px;
+			}
+		}
 	}
-	#post-128{
+	:nth-child(4){
 		line-height: 1;
 		overflow: hidden;
 		position: relative;
 		width: 100%;
+		.warpping-text-adventures {
+			position: absolute;
+			top: 0px;
+			margin: 20px;
+			font-family: 'Merriweather', serif;
+			h2 a {
+				color: white;
+				font-size: 25.6px;
+				font-size: 1.6rem;
+			}
+			.adventures-button {
+				text-decoration: none;
+				color: white;
+				border: 1px solid white;
+				background-color: transparent;
+				padding: 10px;
+			}
+		}
 	}
 }

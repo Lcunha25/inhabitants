@@ -45,11 +45,9 @@
             </section>
             <section class="sections">
                 <h1> LATEST ADVENTURES </h1>
-                <div class="front-page-adventure-wrapper">
                 <ul class="adventures-post">
                 <?php latestAdv('5', '4'); ?>
                 </ul>
-                </div>
             </setion>
 		</main><!-- #main -->
 	</body><!-- #primary -->

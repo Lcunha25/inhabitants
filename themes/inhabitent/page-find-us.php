@@ -43,7 +43,7 @@
     <!-- Sign-up button -->
         <input type="submit" value="Sign-up" class="submit"/>
         </div>
-        <p class="return-msg-ok"></p>
+        <span class="return-msg-ok"></span>
         </div>
         </div>
         <div class="find-us-right-wrapper">

@@ -15,7 +15,7 @@
     padding-left: 0;
     text-transform: uppercase;
     li a{
-        color: #248a83;
+        color: $green;
         text-decoration: none;
     }
 }
@@ -34,7 +34,7 @@
 .entry-info {
     border: 1px solid #e1e1e1;
     .journal-image-wrapper {
-        background-color: #e1e1e1;
+        background-color: $light-grey;
         height: 250px;
         overflow: hidden;
         position: relative;

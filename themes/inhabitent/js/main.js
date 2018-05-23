@@ -1,5 +1,5 @@
 jQuery( document ).ready(function($) {
-    // Search nav bar icon
+    // Search nav bar icon show and hide
     $('.search-field').hide();
     $('.search-toggle').click(function() {
        $('.search-field').toggle();

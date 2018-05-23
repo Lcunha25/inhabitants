@@ -9,21 +9,20 @@
 .page-find-us-right-wrapper {
     padding-left: 5%;
     h1 {
-        color: #2f1339;
+        color: $purple;
         font-size: 24px;
         font-size: 1.5rem;
         margin-bottom: .75rem;
         text-transform: uppercase;
     }
 }
-#post-212 {
+.page-blog-post article {
     margin: 0 0 1.5rem;
     .entry-header {
         line-height: 0;
         position: relative;
         line-height: 0;
         position: relative;
-        color: #404040;
         font-family: Merriweather Web,serif;
         font-size: 16px;
         font-size: 1rem;
@@ -33,8 +32,8 @@
             max-width: 100%;
         }
         h2 {
-            background-color: #248a83;
-            color: #fff;
+            background-color: $green;
+            color: white;
             font-size: 33.6px;
             font-size: 2.1rem;
             left: 0;
@@ -49,198 +48,14 @@
             }
         }
         .entry-meta {
-            background-color: #248a83;
+            background-color: $green;
             bottom: 9px;
-            color: #fff;
+            color: white;
             font-family: Novecento Sans Web,sans-serif;
             padding: 5px 1.5rem;
             position: absolute;
             text-transform: uppercase;
-            right: 0px;
-        }
-    }
-    .entry-content {
-        margin: 1.5rem 0 0;
-    }
-}
-#post-210 {
-    margin: 0 0 1.5rem;
-    .entry-header {
-        line-height: 0;
-        position: relative;
-        color: #404040;
-        font-family: Merriweather Web,serif;
-        font-size: 16px;
-        font-size: 1rem;
-        line-height: 1.75;
-        img {
-            height: auto;
-            max-width: 100%;
-        }
-        h2 {
-            background-color: #248a83;
-            color: #fff;
-            font-size: 33.6px;
-            font-size: 2.1rem;
-            left: 0;
-            padding: .75rem 1.5rem;
-            position: absolute;
-            margin-top: 2.25rem;
-            max-width: 75%;
-            top: 0;
-            a {
-                color: white;
-                text-decoration: none;
-            }
-        }
-        .entry-meta {
-            background-color: #248a83;
-            bottom: 9px;
-            color: #fff;
-            font-family: Novecento Sans Web,sans-serif;
-            padding: 5px 1.5rem;
-            position: absolute;
-            text-transform: uppercase;
-            right: 0px;
-        }
-    }
-    .entry-content {
-        margin: 1.5rem 0 0;
-    }
-}
-#post-124 {
-    margin: 0 0 1.5rem;
-    .entry-header {
-        line-height: 0;
-        position: relative;
-        color: #404040;
-        font-family: Merriweather Web,serif;
-        font-size: 16px;
-        font-size: 1rem;
-        line-height: 1.75;
-        img {
-            height: auto;
-            max-width: 100%;
-        }
-        h2 {
-            background-color: #248a83;
-            color: #fff;
-            font-size: 33.6px;
-            font-size: 2.1rem;
-            left: 0;
-            padding: .75rem 1.5rem;
-            position: absolute;
-            margin-top: 2.25rem;
-            max-width: 75%;
-            top: 0;
-            a {
-                color: white;
-                text-decoration: none;
-            }
-        }
-        .entry-meta {
-            background-color: #248a83;
-            bottom: 9px;
-            color: #fff;
-            font-family: Novecento Sans Web,sans-serif;
-            padding: 5px 1.5rem;
-            position: absolute;
-            text-transform: uppercase;
-            right: 0px;
-        }
-    }
-    .entry-content {
-        margin: 1.5rem 0 0;
-    }
-}
-#post-122 {
-    margin: 0 0 1.5rem;
-    .entry-header {
-        line-height: 0;
-        position: relative;
-        line-height: 0;
-        position: relative;
-        color: #404040;
-        font-family: Merriweather Web,serif;
-        font-size: 16px;
-        font-size: 1rem;
-        line-height: 1.75;
-        img {
-            height: auto;
-            max-width: 100%;
-        }
-        h2 {
-            background-color: #248a83;
-            color: #fff;
-            font-size: 33.6px;
-            font-size: 2.1rem;
-            left: 0;
-            padding: .75rem 1.5rem;
-            position: absolute;
-            margin-top: 2.25rem;
-            max-width: 75%;
-            top: 0;
-            a {
-                color: white;
-                text-decoration: none;
-            }
-        }
-        .entry-meta {
-            background-color: #248a83;
-            bottom: 9px;
-            color: #fff;
-            font-family: Novecento Sans Web,sans-serif;
-            padding: 5px 1.5rem;
-            position: absolute;
-            text-transform: uppercase;
-            right: 0px;
-        }
-    }
-    .entry-content {
-        margin: 1.5rem 0 0;
-    }
-}
-#post-120 {
-    margin: 0 0 1.5rem;
-    .entry-header {
-        line-height: 0;
-        position: relative;
-        line-height: 0;
-        position: relative;
-        color: #404040;
-        font-family: Merriweather Web,serif;
-        font-size: 16px;
-        font-size: 1rem;
-        line-height: 1.75;
-        img {
-            height: auto;
-            max-width: 100%;
-        }
-        h2 {
-            background-color: #248a83;
-            color: #fff;
-            font-size: 33.6px;
-            font-size: 2.1rem;
-            left: 0;
-            padding: .75rem 1.5rem;
-            position: absolute;
-            margin-top: 2.25rem;
-            max-width: 75%;
-            top: 0;
-            a {
-                color: white;
-                text-decoration: none;
-            }
-        }
-        .entry-meta {
-            background-color: #248a83;
-            bottom: 9px;
-            color: #fff;
-            font-family: Novecento Sans Web,sans-serif;
-            padding: 5px 1.5rem;
-            position: absolute;
-            text-transform: uppercase;
-            right: 0px;
+            right: 4px;
         }
     }
     .entry-content {

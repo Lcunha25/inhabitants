@@ -1,8 +1,10 @@
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-
 /* footer */
+p {
+    font-family: 'Merriweather', serif;
+}
 .site-footer{
     background-image: url("../../images/dark-wood.png");
 }
@@ -20,7 +22,7 @@
         color: white;
         padding: 0 25px;
         h1 {
-            color: #d99054;
+            color: $orange;
             font-size: 19.2px;
             font-size: 1.2rem;
             margin-bottom: .75rem;
@@ -32,7 +34,7 @@
         color: white;
         padding: 0 25px;
         h1 {
-            color: #d99054;
+            color: $orange;
             font-size: 19.2px;
             font-size: 1.2rem;
             margin-bottom: .75rem;

@@ -12,6 +12,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+		<style>
+		@import url('https://fonts.googleapis.com/css?family=Merriweather');
+		</style>
 
 	<?php wp_head(); ?>
 	</head>
@@ -33,7 +36,7 @@
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 						<div class="header-search">
-							<form role="search" method="get" class="search-form" action="http://tent.academy.red/">
+							<form role="search" method="get" class="search-form" action="http://localhost:8888/inhabitent/">
 								<fieldset>
 									<a href="#" class="search-toggle" aria-hidden="true">
 										<i class="fa fa-search"></i>

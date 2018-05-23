@@ -14,7 +14,7 @@
 
 .single-product-text-wrapper {
     h2{
-        color: #d99054;
+        color: $orange;
         font-size: 38.4px;
         font-size: 2.4rem;
         margin:0 0 .5rem 0;
@@ -27,7 +27,7 @@
         text-transform: uppercase;
     }
     p {
-        color: #404040;
+        color: $medium-grey;
         font-family: Merriweather Web,serif;
         font-size: 16px;
         font-size: 1rem;
