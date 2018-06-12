@@ -51,8 +51,9 @@
             <section class="sections">
                 <h1> LATEST ADVENTURES </h1>
                 <ul class="adventures-post">
-                <?php latestAdv('5', '4'); ?>
+                <?php latestAdv('adventures', '4'); ?>
                 </ul>
+                <button class='adventures-journal'><a href="<?php echo esc_url_raw( get_site_url()) . "/adventures"; ?>">MORE ADVENTURES</a></button>
             </setion>
 		</main><!-- #main -->
 	</body><!-- #primary -->

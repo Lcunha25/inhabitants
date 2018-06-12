@@ -73,8 +73,8 @@
 
 <?php 
 // function used in "front-page.php" Latest Adventures
-    function latestAdv ($cat, $postPP){
-        $query = "cat=$cat&posts_per_page=$postPP";
+    function latestAdv ($customFT, $postPP){
+        $query = "post_type=$customFT&posts_per_page=$postPP";
 
 		$newsPosts = new WP_Query($query);
 			 if ( $newsPosts->have_posts() ) : 
@@ -90,7 +90,8 @@
 
 					echo "<li id='post-" . get_the_ID() . "'>";
 					echo "<div class='li-adventures-wapper'>";
-					echo get_the_post_thumbnail();
+					$image = CFS()->get('image');
+					echo "<img src=" . esc_url($image) . ">";
 					echo "<div class='warpping-text-adventures'>";
 					echo "<h2>" . "<a>". get_the_title() . "</a>" . "</h2>";
 					echo "<a  class='adventures-button' href=" . get_permalink() . ">Read More</a>";

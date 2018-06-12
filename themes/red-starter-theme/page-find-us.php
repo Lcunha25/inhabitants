@@ -25,7 +25,8 @@
         <div>
             <h1>WE TAKE CAMPING VERY SERIOUSLY.</h1>
             <p>Inhabitent Camping Supply Co. knows what it takes to outfit a camping trip right. From flannel shirts to artisanal axes, we’ve got your covered. Please contact us below with any questions comments or suggestions.</p>
-            <h1>SEND US EMAIL!</h1>
+            <h1>SEND US YOUR EMAIL!</h1>
+            <p>We will make sure to be in touch when we have any news</p>
         <div class="input-line">
         <div class="login-line">
         <input type="text" name="email-input" class="email-input" placeholder="Email Address" />

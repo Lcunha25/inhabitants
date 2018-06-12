@@ -886,7 +886,7 @@ H1, H2, H3, H4, H5 {
     .blog-post li .warpping-text-journal {
       height: 168px;
       display: grid;
-      grid-template-rows: 15% 60% 25%;
+      grid-template-rows: 14% 63% 23%;
       grid-template-columns: 34% 66%; }
       .blog-post li .warpping-text-journal h2 {
         grid-column-start: 1;
@@ -894,13 +894,17 @@ H1, H2, H3, H4, H5 {
         .blog-post li .warpping-text-journal h2 a {
           color: #248A83;
           text-decoration: none; }
+      .blog-post li .warpping-text-journal a {
+        text-transform: uppercase;
+        font-weight: 250;
+        text-align: center; }
     .blog-post li .journal-button {
       position: relative;
       bottom: .75rem;
       left: .75rem;
       border: 1px solid #000;
       color: #000;
-      padding: 10px 20px;
+      padding: 5px 10px;
       text-decoration: none; }
 
 .li-adventures-wapper {
@@ -929,6 +933,9 @@ H1, H2, H3, H4, H5 {
     background-color: transparent;
     padding: 10px; }
 
+.sections {
+  margin-bottom: 4.5rem; }
+
 .adventures-post {
   display: grid;
   grid-template-rows: 275px 275px;
@@ -937,8 +944,8 @@ H1, H2, H3, H4, H5 {
   margin-left: 0;
   padding-left: 0;
   width: 100%;
-  margin-bottom: 4.5rem;
-  height: 550px; }
+  height: 550px;
+  margin: 0 0 3.5rem; }
   .adventures-post :nth-child(1) {
     position: relative;
     grid-column: 1/span 2;
@@ -961,6 +968,8 @@ H1, H2, H3, H4, H5 {
     position: relative;
     grid-column: 3/span 2;
     grid-row: 1/span 1; }
+    .adventures-post :nth-child(2) img {
+      width: 100%; }
     .adventures-post :nth-child(2) .warpping-text-adventures {
       position: absolute;
       top: 0px;
@@ -1016,6 +1025,25 @@ H1, H2, H3, H4, H5 {
         border: 1px solid white;
         background-color: transparent;
         padding: 10px; }
+
+.adventures-journal {
+  background-color: #248A83;
+  border-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  line-height: 1;
+  padding: 1rem 2rem;
+  text-shadow: none;
+  font-size: 16px; }
+  .adventures-journal a {
+    color: #fff;
+    text-decoration: none; }
+  .adventures-journal:hover {
+    text-shadow: none;
+    border: 1px solid;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: #2f1339; }
 
 .main-find-us-page {
   display: grid;
@@ -1146,12 +1174,11 @@ H1, H2, H3, H4, H5 {
   -webkit-box-pack: center;
           justify-content: center;
   list-style-type: none;
-  margin-left: 0;
-  padding-left: 0;
   text-transform: uppercase; }
   .product-type-ul li a {
     color: #248A83;
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 0 30px; }
 
 .product-pictures-price {
   margin-left: auto;
@@ -1281,6 +1308,24 @@ H1, H2, H3, H4, H5 {
   border-right: 1px solid #e1e1e1;
   padding-right: 5%; }
 
+.single-product-button {
+  background-color: white;
+  border-color: #808080;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  line-height: 1;
+  padding: 0.5rem 2rem;
+  text-shadow: none;
+  font-size: 16px; }
+  .single-product-button i {
+    color: #808080; }
+  .single-product-button:hover {
+    text-shadow: none;
+    border: 1px solid;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: #2f1339; }
+
 .single-product-content-area {
   margin-left: auto;
   margin-right: auto;
@@ -1340,6 +1385,44 @@ H1, H2, H3, H4, H5 {
   border-bottom: 1px dashed #c8c8c8;
   margin-bottom: 3rem;
   text-align: center; }
+
+.adventures-type-post {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-template-rows: 45% 45%;
+  grid-gap: 1.5rem;
+  margin-bottom: 4.5rem;
+  list-style: none;
+  height: 1100px;
+  width: 1100px;
+  margin: 0;
+  padding: 0; }
+  .adventures-type-post li {
+    position: relative; }
+  .adventures-type-post .warpping-text-adventures {
+    position: absolute;
+    top: 0px;
+    margin: 20px;
+    font-family: 'Merriweather', serif; }
+    .adventures-type-post .warpping-text-adventures h2 a {
+      font-size: 48px;
+      font-size: 3rem; }
+    .adventures-type-post .warpping-text-adventures .adventures-button {
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+      background-color: transparent;
+      padding: 10px; }
+
+.adventure-text-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  margin-bottom: 4.5rem; }
+  .adventure-text-wrapper h2 {
+    font-size: 2.5rem; }
+  .adventure-text-wrapper p {
+    line-height: 2rem; }
 
 .error-content-area {
   margin-left: auto;
