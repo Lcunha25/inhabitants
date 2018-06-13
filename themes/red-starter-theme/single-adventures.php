@@ -7,7 +7,7 @@
  */
 
 get_header(); ?>
-<div id="primary" class="single-adventures-content-area">
+<body id="primary" class="single-adventures-content-area">
 		<main id="main" class="single-adventures-site-main" role="main">
 		<?php $image = CFS()->get( 'image' ); 
 			$price = CFS()->get( 'price' );
@@ -26,10 +26,10 @@ get_header(); ?>
 					echo "<h2>" . get_the_title() . "</h2>";
 					echo "<p class=\"product-price\">{$price}</p>";
 					echo "<p>" . the_content() . "</p>";
-					echo "<div class='single-product-button-wrapper'>
-					<button type='button' class='single-product-button'><i class='fab fa-facebook-f'></i> Like</button>
-					<button type='button' class='single-product-button'><i class='fab fa-twitter'></i> Tweet</button>
-					<button type='button' class='single-product-button'><i class='fab fa-pinterest'></i> Pin</button>
+					echo "<div class='single-adventure-button-wrapper'>
+					<button type='button' class='single-adventure-button'><i class='fab fa-facebook-f'></i> Like</button>
+					<button type='button' class='single-adventure-button'><i class='fab fa-twitter'></i> Tweet</button>
+					<button type='button' class='single-adventure-button'><i class='fab fa-pinterest'></i> Pin</button>
 						</div>";
 					echo "</div>";
 				?>

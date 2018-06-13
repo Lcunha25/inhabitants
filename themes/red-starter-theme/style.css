@@ -133,6 +133,24 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   font-weight: 600;
   font-style: normal; }
 
+.fp-content-area .site-header {
+  background-color: transparent;
+  border-bottom: none;
+  position: absolute; }
+  .fp-content-area .site-header #primary-menu li a {
+    color: white; }
+  .fp-content-area .site-header .search-toggle i {
+    color: white; }
+
+.about-content-area .site-header {
+  background-color: transparent;
+  border-bottom: none;
+  position: absolute; }
+  .about-content-area .site-header #primary-menu li a {
+    color: white; }
+  .about-content-area .site-header .search-toggle i {
+    color: white; }
+
 .site-header {
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1;
@@ -888,6 +906,9 @@ H1, H2, H3, H4, H5 {
       display: grid;
       grid-template-rows: 14% 63% 23%;
       grid-template-columns: 34% 66%; }
+      .blog-post li .warpping-text-journal span {
+        grid-column-start: 1;
+        grid-column-end: 3; }
       .blog-post li .warpping-text-journal h2 {
         grid-column-start: 1;
         grid-column-end: 3; }
@@ -944,7 +965,6 @@ H1, H2, H3, H4, H5 {
   margin-left: 0;
   padding-left: 0;
   width: 100%;
-  height: 550px;
   margin: 0 0 3.5rem; }
   .adventures-post :nth-child(1) {
     position: relative;
@@ -1149,7 +1169,9 @@ H1, H2, H3, H4, H5 {
 
 .entry-content {
   margin: 3rem auto;
-  max-width: 800px; }
+  max-width: 800px;
+  margin-bottom: 4.5rem;
+  line-height: 2rem; }
   .entry-content h2 {
     text-align: center; }
     .entry-content h2 a {
@@ -1308,7 +1330,7 @@ H1, H2, H3, H4, H5 {
   border-right: 1px solid #e1e1e1;
   padding-right: 5%; }
 
-.single-product-button {
+.single-adventure-button {
   background-color: white;
   border-color: #808080;
   -webkit-box-shadow: none;
@@ -1317,9 +1339,9 @@ H1, H2, H3, H4, H5 {
   padding: 0.5rem 2rem;
   text-shadow: none;
   font-size: 16px; }
-  .single-product-button i {
+  .single-adventure-button i {
     color: #808080; }
-  .single-product-button:hover {
+  .single-adventure-button:hover {
     text-shadow: none;
     border: 1px solid;
     -webkit-box-shadow: none;

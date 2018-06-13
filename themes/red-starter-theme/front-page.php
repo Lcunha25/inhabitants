@@ -7,8 +7,8 @@
  * @package RED_Starter_Theme
  */
 ?>
+	<body id="primary" class="fp-content-area">
         <?php get_header(); ?>
-	<body id="primary" class="content-area">
         <div class="background-image-main"> 
             <div class="background-image-main-wrapper">
                 <?php 
@@ -23,6 +23,7 @@
                 ?>
             </div>
         </div>
+        <span class='anchor-point'></span>
 		<main id="main" class="site-main" role="main">
             <section class="sections">
                 <h1>SHOP STUFF</h1>

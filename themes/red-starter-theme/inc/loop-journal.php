@@ -52,7 +52,7 @@
 					echo "<div class='li-journal-wapper'>";
 					echo get_the_post_thumbnail();
 					echo "<div class='warpping-text-journal'>";
-					echo "<span>" . get_the_date() . "</span>";
+					echo "<span>" . get_the_date() . " / " . get_comments_number() . " comments</span>";
 					echo "<h2>" . "<a>". get_the_title() . "</a>" . "</h2>";
 					echo "<a class='journal-button' href=" . get_permalink() . ">Read Entry</a>";
 					echo "</div>";

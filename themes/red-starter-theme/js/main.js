@@ -2,8 +2,59 @@ jQuery( document ).ready(function($) {
     // Search nav bar icon show and hide
     $('.search-field').hide();
     $('.search-toggle').click(function() {
-       $('.search-field').toggle();
+       $('.search-field').slideToggle();
     });
+
+    // change color of menu on scrolldown
+    function changeNav(){
+        
+        // Front page
+        $('.fp-content-area .logo-nav img').remove();
+        $('.fp-content-area .logo-nav').append("<img src='wp-content/themes/red-starter-theme/images/logos/inhabitent-logo-tent-white.svg' />");
+       
+        // About page
+        $('.about-content-area .logo-nav img').remove();
+        $('.about-content-area .logo-nav').append("<img src='../wp-content/themes/red-starter-theme/images/logos/inhabitent-logo-tent-white.svg' />");
+
+        var targetOffset = $(".anchor-point").offset();
+        var scrollVar = $(window).scroll( function(){
+
+            var scrollOnTop = $(window).scrollTop();
+
+            if ( scrollOnTop < targetOffset.top) { 
+                // Front Page
+                $('.fp-content-area .logo-nav img').remove();
+                $('.fp-content-area .logo-nav').append("<img src='wp-content/themes/red-starter-theme/images/logos/inhabitent-logo-tent-white.svg' />");        
+                // About Page
+                $('.about-content-area .logo-nav img').remove();
+                $('.about-content-area .logo-nav').append("<img src='../wp-content/themes/red-starter-theme/images/logos/inhabitent-logo-tent-white.svg' />");
+                
+                // General CSS changes for about and front pages
+                $('.site-header').css('position', 'absolute');
+                $('#primary-menu li a').css('color', 'white');
+                $('.search-toggle i').css('color', 'white');
+                $('.site-header').css({
+                    'background-color': 'transparent',
+                    'border-bottom': 'transparent'
+                });
+            } else {
+                $('.logo-nav img').remove();
+                $('.fp-content-area .logo-nav').append("<img src='wp-content/themes/red-starter-theme/images/logos/inhabitent-logo-tent.svg' />");
+                $('.about-content-area .logo-nav').append("<img src='../wp-content/themes/red-starter-theme/images/logos/inhabitent-logo-tent.svg' />");
+               
+                // General CSS changes for about and front pages
+                $('.site-header').css('position', 'fixed');
+                $('#primary-menu li a').css('color', '#248A83');
+                $('#primary-menu li a').css('color', '#248A83');
+                $('.search-toggle i').css('color', '#248A83');
+                $('.site-header').css({
+                    'background-color': 'hsla(0,0%,100%,.85)',
+                    'border-bottom': '1px solid #e1e1e1'
+                });
+            }
+        });
+    }
+    changeNav();
 
     // E-mail Submit Button.
     function validateEmail(email) {
@@ -42,5 +93,5 @@ jQuery( document ).ready(function($) {
     }
     $('.submit').click(validate);
 
-    
+
 });

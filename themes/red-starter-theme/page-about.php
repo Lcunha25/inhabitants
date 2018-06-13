@@ -3,8 +3,8 @@
 * Template Name: About
 */
 ?>
+<body id="primary" class="about-content-area">
     <?php get_header(); ?>
-<body>
     <section class="background-image-main"> 
         <div class="background-image-main-wrapper">
             <?php 
@@ -16,6 +16,7 @@
             <h1 class="entry-title">About</h1>
         </div>
     </section>
+    <span class='anchor-point'></span>
     <div class="entry-content">
         <?php include 'inc/loop-journal.php'; 
         displayPost('11', '2'); ?>
