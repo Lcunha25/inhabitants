@@ -166,7 +166,7 @@
 				 while ( $newsPosts->have_posts() ) : $newsPosts->the_post(); 
 
 					get_template_part( 'template-parts/content', 'product' ); 
-
+					echo "<a class='journal-button' href=" . get_permalink() . "><button id='button-journal'>read more</button></a>";
 
 				 endwhile; 
 
