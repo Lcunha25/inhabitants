@@ -9,12 +9,12 @@
 plugins/*
 !plugins/red-functionality-master/
 !plugins/business-hours-widget/
-# Ignore everything in "themes" except the active theme. #
+# Ignore everything inß "themes" except the active theme. #
 themes/*
-!themes/inhabitent/
+!themes/red-starter-theme/
 # Ignore packages #
-themes/inhabitent/node_modules/
-themes/inhabitent/.vscode/
+themes/red-starter-theme/node_modules/
+themes/red-starter-theme/.vscode/
 # Ignore OS files #
 .DS_Store
 .DS_Store?
@@ -31,3 +31,9 @@ ehthumbs.db
 error_log
 access_log
 uploads/
+#Ignore comps folder with pages pictures and content folder with text for page posts #
+themes/red-starter-theme/comps/
+themes/red-starter-theme/content/
+
+#ignore non min files and SCSS#
+themes/red-starter-theme/sass/
