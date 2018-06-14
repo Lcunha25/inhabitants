@@ -54,7 +54,7 @@
                 <ul class="adventures-post">
                 <?php latestAdv('adventures', '4'); ?>
                 </ul>
-                <button class='adventures-journal'><a href="<?php echo esc_url_raw( get_site_url()) . "/adventures"; ?>">MORE ADVENTURES</a></button>
+                <a href="<?php echo esc_url_raw( get_site_url()) . "/adventures"; ?>"><button class='adventures-journal'>MORE ADVENTURES</button></a>
             </setion>
 		</main><!-- #main -->
 	</body><!-- #primary -->
