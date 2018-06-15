@@ -23,6 +23,10 @@ jQuery( document ).ready(function($) {
         $('.about-content-area .logo-nav img').remove();
         $('.about-content-area .logo-nav').append("<img src='../wp-content/themes/red-starter-theme/images/logos/inhabitent-logo-tent-white.svg' />");
 
+        // single.adventures page
+        $('.single-adventures-content-area .logo-nav img').remove();
+        $('.single-adventures-content-area .logo-nav').append("<img src='../../wp-content/themes/red-starter-theme/images/logos/inhabitent-logo-tent-white.svg' />");
+       
         var targetOffset = $(".anchor-point").offset();
         var scrollVar = $(window).scroll( function(){
 
@@ -35,6 +39,9 @@ jQuery( document ).ready(function($) {
                 // About Page
                 $('.about-content-area .logo-nav img').remove();
                 $('.about-content-area .logo-nav').append("<img src='../wp-content/themes/red-starter-theme/images/logos/inhabitent-logo-tent-white.svg' />");
+                // single.adventures page
+                $('.single-adventures-content-area .logo-nav img').remove();
+                $('.single-adventures-content-area .logo-nav').append("<img src='../../wp-content/themes/red-starter-theme/images/logos/inhabitent-logo-tent-white.svg' />");
                 
                 // General CSS changes for about and front pages
                 $('.site-header').css('position', 'absolute');
@@ -48,6 +55,7 @@ jQuery( document ).ready(function($) {
                 $('.logo-nav img').remove();
                 $('.fp-content-area .logo-nav').append("<img src='wp-content/themes/red-starter-theme/images/logos/inhabitent-logo-tent.svg' />");
                 $('.about-content-area .logo-nav').append("<img src='../wp-content/themes/red-starter-theme/images/logos/inhabitent-logo-tent.svg' />");
+                $('.single-adventures-content-area .logo-nav').append("<img src='../../wp-content/themes/red-starter-theme/images/logos/inhabitent-logo-tent.svg' />");
                
                 // General CSS changes for about and front pages
                 $('.site-header').css('position', 'fixed');

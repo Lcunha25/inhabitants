@@ -5,9 +5,9 @@
  * 
  * @package RED_Starter_Theme
  */
-
-get_header(); ?>
+ ?>
 <body id="primary" class="single-adventures-content-area">
+	<?php get_header(); ?>
 		<main id="main" class="single-adventures-site-main" role="main">
 		<?php $image = CFS()->get( 'image' ); 
 			$price = CFS()->get( 'price' );
@@ -18,20 +18,22 @@ get_header(); ?>
 
 				<?php
                     echo "<section class='background-image-main'>";
-                    echo "<div class='background-image-main-wrapper'>";
-                    echo '<img src="'.esc_url($image).'" rel="lightbox">'; 
-                    echo "</div>";
-                    echo "</section>";
-                    echo "<div class='adventure-text-wrapper'>";
-					echo "<h2>" . get_the_title() . "</h2>";
-					echo "<p class=\"product-price\">{$price}</p>";
-					echo "<p>" . the_content() . "</p>";
-					echo "<div class='single-adventure-button-wrapper'>
-					<button type='button' class='single-adventure-button'><i class='fab fa-facebook-f'></i> Like</button>
-					<button type='button' class='single-adventure-button'><i class='fab fa-twitter'></i> Tweet</button>
-					<button type='button' class='single-adventure-button'><i class='fab fa-pinterest'></i> Pin</button>
-						</div>";
-					echo "</div>";
+						echo "<div class='background-image-main-wrapper'>";
+							echo '<img src="'.esc_url($image).'" rel="lightbox">'; 
+						echo "</div>";
+					echo "</section>";
+					echo "<span class='anchor-point'></span>";
+						echo "<div class='adventure-text-wrapper'>";
+							echo "<h2>" . get_the_title() . "</h2>";
+							echo "<p class=\"product-price\">{$price}</p>";
+							echo "<p>" . the_content() . "</p>";
+						echo "<div class='single-adventure-button-wrapper'>
+							<button type='button' class='single-adventure-button'><i class='fab fa-facebook-f'></i> Like</button>
+							<button type='button' class='single-adventure-button'><i class='fab fa-twitter'></i> Tweet</button>
+							<button type='button' class='single-adventure-button'><i class='fab fa-pinterest'></i> Pin</button>
+							</div>";
+						echo "</div>";
+					echo "</section>";
 				?>
 
 			<?php endwhile; ?>

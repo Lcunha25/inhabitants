@@ -9,31 +9,31 @@ get_header(); ?>
 
 	<section id="primary" class="search-content-area">
 		<main id="main" class="search-site-main" role="main">
-		<section class="single-right-page">
+			<section class="single-right-page">
 
-			<?php if ( have_posts() ) : ?>
+				<?php if ( have_posts() ) : ?>
 
-				<header class="page-header">
-					<h1 class="page-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-				</header><!-- .page-header -->
+					<header class="page-header">
+						<h1 class="page-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+					</header><!-- .page-header -->
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
+					<?php /* Start the Loop */ ?>
+					<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'template-parts/content', 'search' ); ?>
+						<?php get_template_part( 'template-parts/content', 'search' ); ?>
 
-				<?php endwhile; ?>
+					<?php endwhile; ?>
 
-				<?php red_starter_numbered_pagination(); ?>
+					<?php red_starter_numbered_pagination(); ?>
 
-			<?php else : ?>
+				<?php else : ?>
 
-				<?php get_template_part( 'template-parts/content', 'none' ); ?>
+					<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-			<?php endif; ?>
-		</section>
+				<?php endif; ?>
+			</section>
 
-		<section class="page-find-us-right-wrapper">
+				<section class="page-find-us-right-wrapper">
 					<div class="">
 						<h1>CONTACT INFO</h1>
 						<p><i class="fas fa-phone"></i> 778-456-7891</p>

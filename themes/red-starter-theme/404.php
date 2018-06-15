@@ -12,7 +12,7 @@ get_header(); ?>
 	<div id="primary" class="error-content-area">
 		<main id="main" class="error-site-main" role="main">
 
-			<section class="error-404 not-found">
+			<section class="single-right-page">
 				<header class="page-header">
 					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
 				</header><!-- .page-header -->
@@ -48,7 +48,21 @@ get_header(); ?>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
-
+			<section class="page-find-us-right-wrapper">
+					<div class="">
+						<h1>CONTACT INFO</h1>
+						<p><i class="fas fa-phone"></i> 778-456-7891</p>
+						<p><i class="fa fa-envelope"></i> info@inhabitents.com</p>
+						<p><i class="fa fa-map-marker"></i> 1490 W Broadway, Vancouver, BC V6H 1H5<p>
+					</div>
+					<div class="operations">
+						<?php include('sidebar.php'); ?>
+					</div>
+					<div class="archives">
+						<h1>archives</h1>
+						<ul><?php wp_get_archives(); ?></ul>
+					</div>
+				</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
