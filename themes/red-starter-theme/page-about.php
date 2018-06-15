@@ -13,13 +13,21 @@
             ?>
         </div>
         <div class="title">
-            <h1 class="entry-title">About</h1>
+            <h1 class="entry-title"><?php echo CFS()->get('page_title') ?></h1>
         </div>
     </section>
     <span class='anchor-point'></span>
     <div class="entry-content">
-        <?php include 'inc/loop-journal.php'; 
-        displayPost('11', '2'); ?>
+        <?php  
+            $title_1 = CFS()->get('title_1');
+            $title_1_text = CFS()->get('title_1_text');
+            $title_2 = CFS()->get('title_2');
+            $title_2_text = CFS()->get('title_2_text');
+            echo "<h2>" . "<a>" . $title_1 . "</a>" . "</h2>";
+            echo "<p>" . $title_1_text . "</p>";
+            echo "<h2>" . "<a>" . $title_2 . "</a>" . "</h2>";
+            echo "<p>" . $title_2_text . "</p>";
+         ?>
     </div>
     <?php get_footer(); ?>
 </body>

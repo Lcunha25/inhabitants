@@ -137,8 +137,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   background-color: transparent;
   border-bottom: none;
   position: absolute; }
-  .fp-content-area .site-header #primary-menu li a {
-    color: white; }
+  .fp-content-area .site-header #primary-menu {
+    line-height: 0.5px; }
+    .fp-content-area .site-header #primary-menu li a {
+      color: white; }
   .fp-content-area .site-header .search-toggle i {
     color: white; }
 
@@ -146,8 +148,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   background-color: transparent;
   border-bottom: none;
   position: absolute; }
-  .about-content-area .site-header #primary-menu li a {
-    color: white; }
+  .about-content-area .site-header #primary-menu {
+    line-height: 0.5px; }
+    .about-content-area .site-header #primary-menu li a {
+      color: white; }
   .about-content-area .site-header .search-toggle i {
     color: white; }
 
@@ -160,6 +164,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   transition: top .5s linear;
   width: 100%;
   z-index: 3; }
+  .site-header #primary-menu {
+    line-height: 0.5px; }
 
 .nav-bar {
   color: white;
@@ -168,7 +174,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   .nav-bar .logo-nav {
     color: white;
     height: 33px;
-    width: 50px; }
+    width: 50px;
+    position: relative;
+    bottom: 6px; }
+    .nav-bar .logo-nav img {
+      height: 90%; }
   .nav-bar #primary-menu {
     width: 60%;
     margin: 0px 21px 0px 0px;
@@ -181,23 +191,37 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50px;
   position: relative;
-  left: 25%; }
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
 .menu-top-menu-container {
   width: 80%; }
 
-.header-search fieldset {
-  height: 50px;
-  border: none;
-  position: relative; }
-  .header-search fieldset a {
-    width: 18px; }
-  .header-search fieldset label {
-    position: absolute;
-    top: 0;
-    left: 80%; }
+.header-search {
+  padding: 0 .625em .75em;
+  line-height: 0.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .header-search a {
+    margin: 0 5px 0 0px; }
+  .header-search .search-form {
+    position: relative;
+    bottom: 6px; }
+    .header-search .search-form .search-field {
+      background: transparent;
+      border: none;
+      color: white; }
+      .header-search .search-form .search-field::-webkit-input-placeholder {
+        color: #a1a1a1; }
+      .header-search .search-form .search-field:-ms-input-placeholder {
+        color: #a1a1a1; }
+      .header-search .search-form .search-field::-ms-input-placeholder {
+        color: #a1a1a1; }
+      .header-search .search-form .search-field::placeholder {
+        color: #a1a1a1; }
 
 .search-toggle i {
   color: #248A83; }
@@ -604,7 +628,7 @@ a {
   clear: both;
   display: block;
   float: right;
-  width: 80%;
+  width: 100%;
   height: 50px; }
   .main-navigation ul {
     display: none;
@@ -942,7 +966,9 @@ H1, H2, H3, H4, H5 {
   z-index: 1;
   height: 100%; }
   .li-adventures-wapper img {
-    height: 100%; }
+    height: 100%;
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%); }
 
 .warpping-text-adventures {
   position: absolute;
@@ -1124,14 +1150,33 @@ H1, H2, H3, H4, H5 {
 
 .input-line {
   width: 100%; }
-  .input-line .email-input {
+  .input-line .login-line p {
+    text-transform: uppercase;
+    color: #2f1339;
+    font-size: 1.1rem;
+    font-family: Novecento; }
+    .input-line .login-line p span {
+      color: red;
+      font-size: 14px;
+      font-family: Novecento; }
+  .input-line .form-input {
     width: 50%;
     height: 40px;
-    border-radius: 5px;
+    background-color: #f4f4f4;
     border: none;
     padding: 0px 0px 0px 10px;
     margin-right: 5px;
-    background-color: lightgray; }
+    background-color: lightgray;
+    margin: 10px 5px 10px 0; }
+  .input-line .email-input {
+    width: 50%;
+    height: 40px;
+    background-color: #f4f4f4;
+    border: none;
+    padding: 0px 0px 0px 10px;
+    margin-right: 5px;
+    background-color: lightgray;
+    margin: 10px 5px 10px 0; }
   .input-line .section-button {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -1139,7 +1184,6 @@ H1, H2, H3, H4, H5 {
     background-color: white;
     width: 40%;
     height: 40px;
-    border-radius: 5px;
     overflow: hidden; }
     .input-line .section-button .revert-triangle {
       position: relative;
@@ -1154,6 +1198,14 @@ H1, H2, H3, H4, H5 {
       bottom: 50px;
       float: right;
       right: 20px; }
+  .input-line .text-input {
+    width: 90%;
+    height: 240px;
+    background-color: #f4f4f4;
+    border: none;
+    padding: 0px 0px 0px 10px;
+    background-color: lightgray;
+    margin: 10px 5px 10px 0; }
   .input-line .section {
     border: none;
     background-color: lightgray;
@@ -1161,13 +1213,26 @@ H1, H2, H3, H4, H5 {
     height: 20px;
     margin: 10px 0; }
   .input-line .submit {
-    margin: 10px;
-    padding: 0px;
-    margin: 20px 0px;
-    height: 50px;
-    border-radius: 5px;
+    background: #248A83;
     border: none;
-    width: 50%; }
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    font-family: Novecento;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none; }
+    .input-line .submit:hover {
+      background-color: #248a5f;
+      color: white;
+      border-color: white;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      text-shadow: none; }
 
 .return-msg-ok h3 {
   color: #2f1339; }
@@ -1286,8 +1351,9 @@ H1, H2, H3, H4, H5 {
       color: #248A83;
       text-decoration: none; }
 
-.page-blog-post article {
-  margin: 0 0 1.5rem; }
+.page-blog-post {
+  margin: 0;
+  padding: 0; }
   .page-blog-post article .entry-header {
     line-height: 0;
     position: relative;
@@ -1299,7 +1365,7 @@ H1, H2, H3, H4, H5 {
     line-height: 1.75; }
     .page-blog-post article .entry-header img {
       height: auto;
-      max-width: 100%; }
+      width: 100%; }
     .page-blog-post article .entry-header h2 {
       background-color: #248A83;
       color: white;
@@ -1316,30 +1382,26 @@ H1, H2, H3, H4, H5 {
         text-decoration: none; }
     .page-blog-post article .entry-header .entry-meta {
       background-color: #248A83;
-      bottom: 9px;
+      bottom: 0;
       color: white;
       font-family: Novecento;
       padding: 5px 1.5rem;
       position: absolute;
       text-transform: uppercase;
-      right: 4px; }
+      right: 0; }
   .page-blog-post article .entry-content {
-    margin: 1.5rem 0 0; }
+    margin: 3rem auto;
+    max-width: 800px;
+    line-height: 2rem; }
 
-#button-journal {
+.read-more {
   color: #000;
   padding: 10px 10px;
   text-decoration: none;
-  background-color: transparent;
-  margin: 0 0 2.5rem 0;
   text-transform: uppercase;
-  font-weight: 250;
   border: 1px solid #000;
-  text-shadow: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border-radius: 0; }
-  #button-journal:hover {
+  font-size: 14px; }
+  .read-more:hover {
     background-color: #248A83;
     color: white;
     border-color: white; }
@@ -1379,6 +1441,9 @@ H1, H2, H3, H4, H5 {
       position: absolute;
       text-transform: uppercase;
       right: 0px; }
+      .single-site-main .entry-header .entry-meta a {
+        text-decoration: none;
+        color: #fff; }
   .single-site-main .single-adventure-button-wrapper {
     margin: 5px 0 2.5rem 0; }
 
@@ -1594,7 +1659,15 @@ H1, H2, H3, H4, H5 {
   padding-top: 50px; }
   .search-content-area .search-site-main {
     padding-top: 3rem;
-    padding-bottom: 3rem; }
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: auto auto; }
+    .search-content-area .search-site-main a {
+      color: #248a83;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 2rem; }
 
 /*--------------------------------------------------------------
 # Media

@@ -20,16 +20,22 @@
                 <p>We will make sure to be in touch when we have any news</p>
             <div class="input-line">
                 <div class="login-line">
-                <input type="text" name="email-input" class="email-input" placeholder="Email Address" />
-                    <div class="section-button">
-                        <select value="sections" class="section">
-                            <option class="one">Shop</option>
-                            <option value="option">Do Stuff</option>
-                            <option value="option">Eat Stuff</option>
-                            <option value="option">Sleep Stuff</option>
-                            <option value="option">Wear Stuff</option>
-                        </select>
-                    </div>
+                    <p>name <span>*</span></p>
+                        <input type="text" name="name-input" class="form-input"/>
+                    <p>Email Address <span>*</span></p>
+                        <input type="text" name="email-input" class="email-input"/>
+                    <p>section button <span>*</span></p>
+                        <div class="section-button">
+                            <select value="sections" class="section">
+                                <option class="one">Shop</option>
+                                <option value="option">Do Stuff</option>
+                                <option value="option">Eat Stuff</option>
+                                <option value="option">Sleep Stuff</option>
+                                <option value="option">Wear Stuff</option>
+                            </select>
+                        </div>
+                    <p>Text input <span>*</span></p>
+                        <textarea type="textarea" name="text-input" class="text-input"></textarea>
                 </div>
                 <p class="return-msg-wrong"></p>
         <!-- Sign-up button -->

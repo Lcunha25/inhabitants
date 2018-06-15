@@ -1,37 +1,4 @@
 <?php 
-// function used on "page-about.php" page.
-
-    function displayPost ($cat, $postPP){
-        $query = "cat=$cat&posts_per_page=$postPP";
-
-        $newsPosts = new WP_Query($query);
-			 if ( $newsPosts->have_posts() ) : 
-
-				 if ( $newsPosts->is_home() && ! $newsPosts->is_front_page() ) : 
-					echo '<header>';
-					echo	'<h1 class="page-title screen-reader-text"> single_post_title(); </h1>';
-					echo '</header>';
-				 endif; 
-
-				 /* Start the Loop */ 
-				 while ( $newsPosts->have_posts() ) : $newsPosts->the_post(); 
-
-					echo "<h2>" . "<a>" . get_the_title() . "</a>" . "</h2>";
-					echo "<p>" . the_content( 'template-parts' ) . "</p>";
-
-				 endwhile; 
-
-				 the_posts_navigation(); 
-
-			 else : 
-
-				 get_template_part( 'template-parts/content', 'none' ); 
-
-			 endif; 
-    }
-?>
-
-<?php 
 // function used in "front-page.php" for Inhabitent journal
     function journal ($cat, $postPP){
         $query = "cat=$cat&posts_per_page=$postPP";
@@ -166,7 +133,6 @@
 				 while ( $newsPosts->have_posts() ) : $newsPosts->the_post(); 
 
 					get_template_part( 'template-parts/content', 'product' ); 
-					echo "<a class='journal-button' href=" . get_permalink() . "><button id='button-journal'>read more</button></a>";
 
 				 endwhile; 
 
@@ -223,15 +189,3 @@
 
 <?php endif; ?>
 <?php } ?>
-
-<?php
-// function to change color of logo and writtings depending on page
-// function selectHeader(){
-// 	$url = $_SERVER["REQUEST_URI"];
-// 	if (strpos($url, "about/") === 0) {
-// 		return true; 
-// 	} else {
-// 		return false;
-// 	}
-// }
-// ?>
