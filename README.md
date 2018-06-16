@@ -28,6 +28,8 @@
 #Custom Post Type:
 ###Custom post Types were used for the strechco goal adventures, for the blog posts and product posts.
 
+#SASS
+I had to make some alterations to the wrapping on the first page adventures on the nth child 2 as the link broke when chrome restarted. to fix it I had to add position absolute to the second child div so that the image would be relative to the div and with width 100%.
 
 # License
 This project is licensed under the MIT License
