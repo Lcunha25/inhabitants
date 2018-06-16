@@ -15,5 +15,19 @@
     enqueu.php - file enqueuing important scripts.
     loop-jornal - File controling the loops on the page. Imported on specific php files to use the loop.
 
+#JS
+###Javascript(jquery) was used for create a functionin search toggle movement, append and remove items while considering the page height so that the nav menu will change color and for validation of e-mail when using the sign-up for updates form.
+    On the validation form JS does the check to see if all the mandatory collums are filled. It also removes the element after submission is completed so that the user can only sign-up once and knows that the submission was successful. The next step would be to work on it linking it to a valid e-mail so that the information is forwarded somewhere.
+
+#Custon Field Types:
+###CFS where used to fetch information on different parts of the project. 
+    On the main page(front page) it fetched the logo from a custom field on the page.
+    On the about page we can fetch the background image and the texts to be used on the page. That also includes the title of the page.
+    CFS's were used on the produc custom post type. They are used to input information about the product price, pictures, and description.
+
+#Custom Post Type:
+###Custom post Types were used for the strechco goal adventures, for the blog posts and product posts.
+
+
 # License
 This project is licensed under the MIT License

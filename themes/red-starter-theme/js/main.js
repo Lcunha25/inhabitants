@@ -18,11 +18,11 @@ jQuery( document ).ready(function($) {
         // Front page
         $('.fp-content-area .logo-nav img').remove();
         $('.fp-content-area .logo-nav').append("<img src='wp-content/themes/red-starter-theme/images/logos/inhabitent-logo-tent-white.svg' />");
-       
+        $('.fp-content-area .header-search .search-form .search-field').css('color', 'white');
         // About page
         $('.about-content-area .logo-nav img').remove();
         $('.about-content-area .logo-nav').append("<img src='../wp-content/themes/red-starter-theme/images/logos/inhabitent-logo-tent-white.svg' />");
-
+        $('.about-content-area .header-search .search-form .search-field').css('color', 'white');
         // single.adventures page
         $('.single-adventures-content-area .logo-nav img').remove();
         $('.single-adventures-content-area .logo-nav').append("<img src='../../wp-content/themes/red-starter-theme/images/logos/inhabitent-logo-tent-white.svg' />");
@@ -47,6 +47,7 @@ jQuery( document ).ready(function($) {
                 $('.site-header').css('position', 'absolute');
                 $('#primary-menu li a').css('color', 'white');
                 $('.search-toggle i').css('color', 'white');
+                $('.header-search .search-form .search-field').css('color', 'white');
                 $('.site-header').css({
                     'background-color': 'transparent',
                     'border-bottom': 'transparent'
@@ -62,6 +63,7 @@ jQuery( document ).ready(function($) {
                 $('#primary-menu li a').css('color', '#248A83');
                 $('#primary-menu li a').css('color', '#248A83');
                 $('.search-toggle i').css('color', '#248A83');
+                $('.header-search .search-form .search-field').css('color', 'black');
                 $('.site-header').css({
                     'background-color': 'hsla(0,0%,100%,.85)',
                     'border-bottom': '1px solid #e1e1e1'

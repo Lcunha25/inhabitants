@@ -224,7 +224,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     .header-search .search-form .search-field {
       background: transparent;
       border: none;
-      color: white; }
+      color: black; }
       .header-search .search-form .search-field::-webkit-input-placeholder {
         color: #a1a1a1; }
       .header-search .search-form .search-field:-ms-input-placeholder {
@@ -951,7 +951,8 @@ H1, H2, H3, H4, H5 {
         grid-column-end: 3; }
         .blog-post li .warpping-text-journal h2 a {
           color: #248A83;
-          text-decoration: none; }
+          text-decoration: none;
+          font-weight: 700; }
       .blog-post li .warpping-text-journal a {
         text-transform: uppercase;
         font-weight: 250;
@@ -1035,6 +1036,8 @@ H1, H2, H3, H4, H5 {
     position: relative;
     grid-column: 3/span 2;
     grid-row: 1/span 1; }
+    .adventures-post :nth-child(2) .li-adventures-wapper {
+      position: absolute; }
     .adventures-post :nth-child(2) img {
       width: 100%; }
     .adventures-post :nth-child(2) .warpping-text-adventures {
@@ -1416,6 +1419,8 @@ H1, H2, H3, H4, H5 {
     background-color: #248A83;
     color: white;
     border-color: white; }
+  .read-more:visited {
+    color: #000; }
 
 .single-site-main {
   display: grid;
