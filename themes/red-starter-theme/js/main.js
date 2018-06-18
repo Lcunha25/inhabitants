@@ -92,7 +92,7 @@ jQuery( document ).ready(function($) {
                 $('.input-line').hide('slow');
                 $('.subscribe-text').hide('slow');
                 $('.return-msg-wrong').hide();
-                $('.return-msg-ok').append('<h1>' + 'Thanks for subscribing' + '</h1>' + '<br>' + '<p>' + 'You ll start receiving free tips and resources soon.' + '</p>');
+                $('.return-msg-ok').append('<h1>' + 'Thanks for your message. It has been sent' + '</h1>' + '<br>' + '<p>' + 'You ll start receiving free tips and resources soon.' + '</p>');
                 $('.return-msg-ok').css({
                     'color' : 'white',
                     'margin' : '40px 0',
@@ -110,7 +110,7 @@ jQuery( document ).ready(function($) {
         }
         return false;
     }
-    $('.submit').click(validate);
+    $('.submit-findus').click(validate);
 
 
 });
