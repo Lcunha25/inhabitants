@@ -9,7 +9,7 @@
 ?>
 	<body id="primary" class="fp-content-area">
         <?php get_header(); ?>
-        <div class="background-image-main"> 
+        <section class="background-image-main"> 
             <div class="background-image-main-wrapper">
                 <?php 
                 $featured_img_url = get_the_post_thumbnail_url(); 
@@ -22,7 +22,7 @@
                 echo "<img src=" . esc_url($image) . ">";
                 ?>
             </div>
-        </div>
+        </section>
         <span class='anchor-point'></span>
 		<main id="main" class="site-main" role="main">
             <section class="sections">
@@ -36,7 +36,7 @@
                         echo "<div class=$product->slug></div>";
                         echo '<p>' . $product->description . '</p>';
                         $url = $term.'/'.$product->slug;
-                        echo "<p><a href=$url>$product->name</a></p>";
+                        echo "<p class='product-type-button'><a href=$url>$product->name</a></p>";
                         echo "</div>";
                     } 
                 ?>

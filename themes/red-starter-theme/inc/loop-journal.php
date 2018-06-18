@@ -18,11 +18,11 @@
 					echo "<li id='post-" . get_the_ID() . "'>";
 					echo "<div class='li-journal-wapper'>";
 					echo get_the_post_thumbnail();
+					echo "</div>";
 					echo "<div class='warpping-text-journal'>";
 					echo "<span>" . get_the_date() . " / " . get_comments_number() . " comments</span>";
-					echo "<h2>" . "<a>". get_the_title() . "</a>" . "</h2>";
+					echo "<h2>" . "<a href=" . get_permalink() . ">". get_the_title() . "</a>" . "</h2>";
 					echo "<a class='journal-button' href=" . get_permalink() . ">Read Entry</a>";
-					echo "</div>";
 					echo "</div>";
 					echo "</li>";
 
@@ -60,7 +60,7 @@
 					$image = CFS()->get('image');
 					echo "<img src=" . esc_url($image) . ">";
 					echo "<div class='warpping-text-adventures'>";
-					echo "<h2>" . "<a>". get_the_title() . "</a>" . "</h2>";
+					echo "<h2>" . "<a href=" . get_permalink() . ">" . get_the_title() . "</a>" . "</h2>";
 					echo "<a  class='adventures-button' href=" . get_permalink() . ">Read More</a>";
 					echo "</div>";
 					echo "</div>";

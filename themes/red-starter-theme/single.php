@@ -9,18 +9,20 @@ get_header(); ?>
     <div id="content" class="site-content">
     <div id="primary" class="content-area">
 		<main id="main" class="single-site-main" role="main">
-			<section class="single-right-page">
+			<section class="single-left-page">
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'template-parts/content', 'single' ); 
+					<?php get_template_part( 'template-parts/content', 'single' ); ?>
+
+					<?php the_post_navigation(); ?>
+					<br>
+					<?php 		
 						echo "<div class='single-adventure-button-wrapper'>
 						<button type='button' class='single-adventure-button'><i class='fab fa-facebook-f'></i> Like</button>
 						<button type='button' class='single-adventure-button'><i class='fab fa-twitter'></i> Tweet</button>
 						<button type='button' class='single-adventure-button'><i class='fab fa-pinterest'></i> Pin</button>
-							</div>";
+						</div>";
 					?>
-
-					<?php the_post_navigation(); ?>
 
 					<?php
 						// If comments are open or we have at least one comment, load up the comment template.
@@ -34,8 +36,8 @@ get_header(); ?>
 			<section class="page-find-us-right-wrapper">
 				<div class="">
 					<h1>CONTACT INFO</h1>
-					<p><i class="fas fa-phone"></i> 778-456-7891</p>
-					<p><i class="fa fa-envelope"></i> info@inhabitents.com</p>
+					<p><i class="fas fa-phone"></i> <a href="tel:778-456-7891">778-456-7891</a></p>
+					<p><i class="fa fa-envelope"></i> <a href="mailto:info@inhabitents.com">info@inhabitents.com</a></p>
 					<p><i class="fa fa-map-marker"></i> 1490 W Broadway, Vancouver, BC V6H 1H5<p>
 				</div>
 				<div class="operations">

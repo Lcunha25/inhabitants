@@ -20,9 +20,9 @@
         <div class="page-find-us-right-wrapper">
             <div class="">
                 <h1>contact info</h1>
-                <p><i class="fas fa-phone"></i> 778-456-7891</p>
-                <p><i class="fa fa-envelope"></i> info@inhabitents.com</p>
-                <p><i class="fa fa-map-marker"></i> 1490 W Broadway, Vancouver, BC V6H 1H5<p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:778-456-7891">778-456-7891</a></p>
+					<p><i class="fa fa-envelope"></i> <a href="mailto:info@inhabitents.com">info@inhabitents.com</a></p>
+					<p><i class="fa fa-map-marker"></i> 1490 W Broadway, Vancouver, BC V6H 1H5<p>
             </div>
             <div class="operations">
                 <?php include('sidebar.php'); ?>

@@ -9,11 +9,11 @@ get_header(); ?>
 
 	<section id="primary" class="search-content-area">
 		<main id="main" class="search-site-main" role="main">
-			<section class="single-right-page">
+			<section class="page-find-us-left-wrapper">
 
 				<?php if ( have_posts() ) : ?>
 
-					<header class="page-header">
+					<header class="month">
 						<h1 class="page-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 					</header><!-- .page-header -->
 
@@ -35,9 +35,9 @@ get_header(); ?>
 
 				<section class="page-find-us-right-wrapper">
 					<div class="">
-						<h1>CONTACT INFO</h1>
-						<p><i class="fas fa-phone"></i> 778-456-7891</p>
-						<p><i class="fa fa-envelope"></i> info@inhabitents.com</p>
+					<h1>contact info</h1>
+						<p><i class="fas fa-phone"></i> <a href="tel:778-456-7891">778-456-7891</a></p>
+						<p><i class="fa fa-envelope"></i> <a href="mailto:info@inhabitents.com">info@inhabitents.com</a></p>
 						<p><i class="fa fa-map-marker"></i> 1490 W Broadway, Vancouver, BC V6H 1H5<p>
 					</div>
 					<div class="operations">
