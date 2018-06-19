@@ -140,7 +140,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   .fp-content-area .site-header #primary-menu {
     line-height: 0.5px; }
     .fp-content-area .site-header #primary-menu li a {
-      color: white; }
+      color: white;
+      font-family: Novecento;
+      font-weight: 400; }
   .fp-content-area .site-header .search-toggle i {
     color: white; }
 
@@ -151,7 +153,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   .about-content-area .site-header #primary-menu {
     line-height: 0.5px; }
     .about-content-area .site-header #primary-menu li a {
-      color: white; }
+      color: white;
+      font-family: Novecento;
+      font-weight: 400; }
   .about-content-area .site-header .search-toggle i {
     color: white; }
 
@@ -162,7 +166,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   .single-adventures-content-area .site-header #primary-menu {
     line-height: 0.5px; }
     .single-adventures-content-area .site-header #primary-menu li a {
-      color: white; }
+      color: white;
+      font-family: Novecento;
+      font-weight: 400; }
   .single-adventures-content-area .site-header .search-toggle i {
     color: white; }
 
@@ -176,7 +182,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   width: 100%;
   z-index: 3; }
   .site-header #primary-menu {
-    line-height: 0.5px; }
+    line-height: 0.5px;
+    font-family: Novecento;
+    font-weight: 400; }
 
 .nav-bar {
   color: white;
@@ -196,7 +204,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     float: right;
     text-decoration: none; }
     .nav-bar #primary-menu li a {
-      color: #248A83; }
+      color: #248A83;
+      font-family: Novecento;
+      font-weight: 400; }
 
 #site-navigation {
   display: -webkit-box;
@@ -981,7 +991,8 @@ H1, H2, H3, H4, H5 {
       font-size: 14px;
       padding: .65rem 1.5rem;
       bottom: .75rem;
-      left: .75rem; }
+      left: .75rem;
+      font-family: Novecento; }
       .blog-post li .journal-button:hover {
         background-color: #248A83;
         color: white;
@@ -1005,11 +1016,14 @@ H1, H2, H3, H4, H5 {
     right: 0;
     top: 0;
     z-index: 1;
-    height: 100%; }
+    height: 100%;
+    overflow: hidden; }
     .adventures-post .li-adventures-wapper img {
+      max-width: none;
+      right: 25%;
       height: 100%;
-      -webkit-filter: brightness(70%);
-              filter: brightness(70%); }
+      -webkit-filter: brightness(65%);
+              filter: brightness(65%); }
   .adventures-post .warpping-text-adventures {
     position: absolute;
     top: 0px;
@@ -1054,7 +1068,8 @@ H1, H2, H3, H4, H5 {
     .adventures-post :nth-child(2) .li-adventures-wapper {
       position: absolute; }
     .adventures-post :nth-child(2) img {
-      width: 100%; }
+      width: 100%;
+      right: 0; }
     .adventures-post :nth-child(2) .warpping-text-adventures {
       position: absolute;
       top: 0px;
@@ -1107,7 +1122,7 @@ H1, H2, H3, H4, H5 {
 
 .main-find-us-page {
   display: grid;
-  grid-template-columns: auto auto; }
+  grid-template-columns: 73% 27%; }
 
 .google-maps iframe {
   height: 350px;
@@ -1133,13 +1148,18 @@ H1, H2, H3, H4, H5 {
     margin-bottom: 1.5rem; }
 
 .find-us-right-wrapper {
-  padding-left: 5%; }
+  padding: 48px 0 48px 56px; }
+  .find-us-right-wrapper div {
+    margin: 0 0 48px 0; }
   .find-us-right-wrapper h1 {
     color: #2f1339;
     font-size: 24px;
     font-size: 1.5rem;
     margin-bottom: .75rem;
     text-transform: uppercase; }
+  .find-us-right-wrapper p a {
+    text-decoration: none;
+    color: #248A83; }
 
 .input-line {
   width: 100%; }
@@ -1409,6 +1429,9 @@ H1, H2, H3, H4, H5 {
 .single-site-main {
   display: grid;
   grid-template-columns: 73% 27%; }
+  .single-site-main .cat-links a {
+    text-decoration: none;
+    color: #248A83; }
   .single-site-main .entry-header {
     line-height: 0;
     position: relative;

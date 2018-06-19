@@ -14,8 +14,6 @@ get_header(); ?>
 
 					<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-					<?php the_post_navigation(); ?>
-					<br>
 					<?php 		
 						echo "<div class='single-adventure-button-wrapper'>
 						<button type='button' class='single-adventure-button'><i class='fab fa-facebook-f'></i> Like</button>
