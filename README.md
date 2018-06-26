@@ -1,3 +1,4 @@
+![](themes/red-starter-theme/images/background-picture.png)
 # Inhabitent Project
 ## This is our inhabitent project for RED academy. It is a mobile-first website made on wordpress with extra custom plug-ins created for multiple uses. 
 The website is built with Wordpress, MySql, PHP, SCSS, CSS, HTML, Gulp and Javascript (Jquery).
